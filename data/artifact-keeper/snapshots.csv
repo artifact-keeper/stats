@@ -58,11 +58,11 @@ date,metric,value
 2026-10-07,closed_issues,1946
 2026-10-07,contributors,73
 2026-10-07,discussions,61
-2026-10-07,docker_pulls:artifactkeeper/backend,116035
+2026-10-07,docker_pulls:artifactkeeper/backend,116043
 2026-10-07,docker_pulls:artifactkeeper/openscap,118309
 2026-10-07,docker_pulls:artifactkeeper/scanner-adapter,51094
 2026-10-07,docker_pulls:artifactkeeper/web,30871
-2026-10-07,docker_pulls_total,316309
+2026-10-07,docker_pulls_total,316317
 2026-10-07,forks,152
 2026-10-07,merged_prs,2128
 2026-10-07,open_issues,196
