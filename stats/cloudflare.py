@@ -34,7 +34,8 @@ query($zone: String!, $start: Date!, $end: Date!, $host: String!) {
       }
       byHost: httpRequestsAdaptiveGroups(
         limit: 10000,
-        filter: {date_geq: $start, date_leq: $end, clientRequestHTTPHost: $host, requestSource: "eyeball"}
+        filter: {date_geq: $start, date_leq: $end, clientRequestHTTPHost: $host, requestSource: "eyeball",
+                 edgeResponseStatus_in: [200, 301, 302, 307, 308]}
       ) {
         count
         dimensions { date clientCountryName }
