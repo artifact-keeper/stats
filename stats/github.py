@@ -66,8 +66,12 @@ class GitHub:
 
     def graphql(self, query: str, **variables: Any) -> dict:
         data, _ = self._request(f"{API}/graphql", method="POST", body={"query": query, "variables": variables})
-        if "errors" in data:
-            raise RuntimeError(data["errors"])
+        errors = data.get("errors") or []
+        # NOT_FOUND on an aliased field (e.g. a deleted or bot account) still
+        # returns data for the other aliases; only fail on real errors.
+        fatal = [e for e in errors if e.get("type") != "NOT_FOUND"]
+        if fatal or data.get("data") is None:
+            raise RuntimeError(errors)
         return data["data"]
 
     def try_get(self, path: str, **params: Any) -> Any | None:

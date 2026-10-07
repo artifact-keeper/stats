@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Where is Artifact Keeper today?</title>
+<meta name="description" content="A spinning globe of the people who star, fork and contribute to Artifact Keeper, by self-reported GitHub location.">
+<style>
+  :root {
+    --bg: #07090f;
+    --panel: rgba(13, 17, 27, 0.82);
+    --ink: #f3f4f6;
+    --ink-2: #aab0bd;
+    --ink-3: #6b7280;
+    --accent: #3987e5;
+    --accent-2: #eb6834;
+    --line: rgba(255,255,255,0.08);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  #globe { position: fixed; inset: 0; }
+  .hud { position: fixed; left: 16px; top: 16px; max-width: 420px; padding: 18px 20px; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; backdrop-filter: blur(10px); }
+  .hud h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: -0.01em; }
+  .hud p { margin: 0; color: var(--ink-2); font-size: 13.5px; line-height: 1.45; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 14px; }
+  .stat { padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: rgba(255,255,255,0.03); }
+  .stat b { display: block; font-size: 22px; font-variant-numeric: tabular-nums; }
+  .stat span { font-size: 11.5px; color: var(--ink-2); text-transform: uppercase; letter-spacing: 0.04em; }
+  .countries { position: fixed; right: 16px; top: 16px; width: 250px; max-height: calc(100vh - 32px); overflow: auto; padding: 14px 16px; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; backdrop-filter: blur(10px); }
+  .countries h2 { margin: 0 0 8px; font-size: 13px; color: var(--ink-2); text-transform: uppercase; letter-spacing: 0.06em; }
+  .countries ol { margin: 0; padding: 0; list-style: none; }
+  .countries li { display: grid; grid-template-columns: 1fr auto; gap: 8px; padding: 5px 0; border-top: 1px solid var(--line); font-size: 13.5px; }
+  .countries li:first-child { border-top: 0; }
+  .countries li .bar { grid-column: 1 / -1; height: 3px; background: var(--line); border-radius: 2px; overflow: hidden; }
+  .countries li .bar i { display: block; height: 100%; background: var(--accent); }
+  .countries li em { font-style: normal; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+  .foot { position: fixed; left: 16px; bottom: 14px; color: var(--ink-3); font-size: 12px; }
+  .foot a { color: var(--ink-2); }
+  .legend { display: flex; gap: 14px; margin-top: 12px; font-size: 12px; color: var(--ink-2); }
+  .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; }
+  @media (max-width: 760px) {
+    .hud { max-width: none; right: 16px; }
+    .countries { display: none; }
+    .stats { grid-template-columns: repeat(3, 1fr); }
+  }
+</style>
+</head>
+<body>
+<div id="globe"></div>
+
+<section class="hud" aria-live="polite">
+  <h1>Where is Artifact Keeper today?</h1>
+  <p>People who star, fork or contribute to <a href="https://github.com/artifact-keeper/artifact-keeper" style="color:var(--ink)">artifact-keeper</a>, placed by the location on their GitHub profile.</p>
+  <div class="stats">
+    <div class="stat"><b id="s-people">–</b><span>people</span></div>
+    <div class="stat"><b id="s-countries">–</b><span>countries</span></div>
+    <div class="stat"><b id="s-places">–</b><span>cities</span></div>
+  </div>
+  <div class="legend"><span><i style="background:var(--accent)"></i>stargazers &amp; forks</span><span><i style="background:var(--accent-2)"></i>contributors</span></div>
+</section>
+
+<aside class="countries">
+  <h2>Top countries</h2>
+  <ol id="country-list"></ol>
+</aside>
+
+<div class="foot">Updated <span id="updated">–</span> · <span id="coverage"></span> · Data: <a href="https://github.com/artifact-keeper/stats">artifact-keeper/stats</a></div>
+
+<script src="https://unpkg.com/globe.gl@2.33.2/dist/globe.gl.min.js"></script>
+<script>
+(async () => {
+  const params = new URLSearchParams(location.search);
+  const project = params.get('project') || 'artifact-keeper';
+  const base = params.get('data') || `../data/${project}`;
+  const [geo, latest] = await Promise.all([
+    fetch(`${base}/geo.json`).then(r => r.json()),
+    fetch(`../latest.json`).then(r => r.json()).catch(() => null),
+  ]);
+
+  const points = geo.places.map(p => {
+    const community = p.stargazers + p.forkers;
+    const total = community + p.contributors;
+    return { lat: p.lat, lng: p.lon, place: p.place, country: p.country, community, contributors: p.contributors, total,
+             color: p.contributors ? '#eb6834' : '#3987e5' };
+  });
+  const max = Math.max(1, ...points.map(p => p.total));
+
+  const el = document.getElementById('globe');
+  const globe = Globe()(el)
+    .globeImageUrl('https://unpkg.com/three-globe@2.31.0/example/img/earth-night.jpg')
+    .bumpImageUrl('https://unpkg.com/three-globe@2.31.0/example/img/earth-topology.png')
+    .backgroundImageUrl('https://unpkg.com/three-globe@2.31.0/example/img/night-sky.png')
+    .atmosphereColor('#3987e5')
+    .atmosphereAltitude(0.18)
+    .pointsData(points)
+    .pointLat('lat').pointLng('lng')
+    .pointAltitude(d => 0.02 + 0.35 * Math.sqrt(d.total / max))
+    .pointRadius(d => 0.25 + 0.6 * Math.sqrt(d.total / max))
+    .pointColor('color')
+    .pointsMerge(false)
+    .pointLabel(d => `<div style="font:13px/1.4 Inter,system-ui,sans-serif;color:#f3f4f6;background:rgba(13,17,27,.92);padding:8px 10px;border-radius:8px;border:1px solid rgba(255,255,255,.1)">
+        <b>${d.place}</b>${d.country ? `, ${d.country}` : ''}<br>
+        <span style="color:#aab0bd">${d.community} stargazers &amp; forks${d.contributors ? ` · ${d.contributors} contributor${d.contributors > 1 ? 's' : ''}` : ''}</span></div>`)
+    .ringsData(points.filter(p => p.contributors))
+    .ringLat('lat').ringLng('lng')
+    .ringColor(() => t => `rgba(235,104,52,${1 - t})`)
+    .ringMaxRadius(2.2).ringPropagationSpeed(1.2).ringRepeatPeriod(1400)
+    .onPointClick(d => globe.pointOfView({ lat: d.lat, lng: d.lng, altitude: 1.4 }, 900));
+
+  globe.controls().autoRotate = true;
+  globe.controls().autoRotateSpeed = 0.55;
+  globe.controls().enableZoom = true;
+  globe.pointOfView({ lat: 30, lng: -20, altitude: 2.2 });
+  el.addEventListener('pointerdown', () => { globe.controls().autoRotate = false; });
+  el.addEventListener('pointerup', () => { setTimeout(() => { globe.controls().autoRotate = true; }, 6000); });
+  new ResizeObserver(() => globe.width(el.clientWidth).height(el.clientHeight)).observe(el);
+
+  document.getElementById('s-people').textContent = geo.people_located.toLocaleString();
+  document.getElementById('s-countries').textContent = geo.countries.length.toLocaleString();
+  document.getElementById('s-places').textContent = points.length.toLocaleString();
+  document.getElementById('coverage').textContent = `${geo.people_located.toLocaleString()} of ${geo.people_total.toLocaleString()} people share a location`;
+  document.getElementById('updated').textContent = latest?.updated || '';
+
+  const list = document.getElementById('country-list');
+  const top = geo.countries.slice(0, 15);
+  const topMax = top[0]?.people || 1;
+  const names = new Intl.DisplayNames(['en'], { type: 'region' });
+  for (const c of top) {
+    let name = c.name; try { name = names.of(c.code) || c.name; } catch {}
+    const li = document.createElement('li');
+    li.innerHTML = `<span>${name}</span><em>${c.people}</em><span class="bar"><i style="width:${100 * c.people / topMax}%"></i></span>`;
+    list.appendChild(li);
+  }
+})();
+</script>
+</body>
+</html>

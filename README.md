@@ -4,7 +4,7 @@ Adoption and community metrics for Artifact Keeper open-source projects, collect
 [a GitHub Actions workflow](.github/workflows/update.yml) and committed back to this repo.
 Charts and numbers below regenerate on every run.
 
-Last updated: **2026-10-07 16:26 UTC**
+Last updated: **2026-10-07 17:03 UTC**
 
 Data lives in [`data/`](data/) as plain CSV so it can be dropped into a spreadsheet or deck.
 Chart images are in [`charts/`](charts/) as PNG and SVG. Machine-readable latest numbers are in
@@ -35,6 +35,10 @@ Repository: [artifact-keeper/artifact-keeper](https://github.com/artifact-keeper
 ![contributors](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/artifact-keeper/stats/main/badges/artifact-keeper/contributors.json) ![docker-pulls-total](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/artifact-keeper/stats/main/badges/artifact-keeper/docker-pulls-total.json) ![release-downloads](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/artifact-keeper/stats/main/badges/artifact-keeper/release-downloads.json) ![unique-cloners-28d](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/artifact-keeper/stats/main/badges/artifact-keeper/unique-cloners-28d.json) ![unique-visitors-28d](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/artifact-keeper/stats/main/badges/artifact-keeper/unique-visitors-28d.json)
 
 ![Growth overview](https://raw.githubusercontent.com/artifact-keeper/stats/main/charts/artifact-keeper/overview.png)
+
+**Where is the community?** A spinning globe of stargazers, forkers and contributors by self-reported
+GitHub location: [artifact-keeper.github.io/stats/site](https://artifact-keeper.github.io/stats/site/?project=artifact-keeper).
+Country totals are in [`data/artifact-keeper/countries.csv`](data/artifact-keeper/countries.csv).
 
 <details>
 <summary>Individual charts</summary>

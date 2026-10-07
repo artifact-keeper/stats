@@ -1,0 +1,409 @@
+query,lat,lon,country,country_code,place
+0.0.0.0,,,,,
+11790,40.902,-73.125,United States,US,11790
+127.0.0.1,,,,,
+::1,35.285,139.662,Japan,JP,1
+"Aachen, Germany",50.776,6.084,Germany,DE,Aachen
+"Aachen, NRW, Germany",50.776,6.084,Germany,DE,Aachen
+"Alexandria, Egypt",31.199,29.895,Egypt,EG,Alexandria
+Almaty,43.236,76.946,Kazakhstan,KZ,Almaty
+"Amoy, China",24.480,118.085,China,CN,Xiamen
+Amsterdam,52.373,4.892,Netherlands,NL,Amsterdam
+Ankara,39.921,32.854,Turkey,TR,Ankara
+"Antwerp, Belgium",51.221,4.400,Belgium,BE,Antwerp
+"Arkansas, United States",35.205,-92.448,United States,US,Arkansas
+Asia/Korea,37.651,126.585,South Korea,KR,ASIA
+Astana,51.128,71.430,Kazakhstan,KZ,Astana
+Atlanta GA,33.742,-84.597,United States,US,"Atlanta, GA"
+"Atlanta, GA, USA",33.754,-84.390,United States,US,Atlanta
+"Austin, TX",30.271,-97.744,United States,US,Austin
+"Austin, TX - ish",,,,,
+"Austin, TX, USA",30.271,-97.744,United States,US,Austin
+"Austin, Texas, USA",30.271,-97.744,United States,US,Austin
+Australia,-24.776,134.755,Australia,AU,Australia
+Australia/Melbourne,-37.814,144.963,Australia,AU,Melbourne
+Austria,47.594,14.125,Austria,AT,Austria
+Bangalore,12.977,77.590,India,IN,Bengaluru
+"Bangalore, India",12.977,77.590,India,IN,Bengaluru
+Bangkok,13.752,100.494,Thailand,TH,Bangkok
+"Bangkok, Thailand",13.752,100.494,Thailand,TH,Bangkok
+"Basusarri, Euskal Herria, France",,,,,
+"Bay Area, CA",37.788,-122.356,United States,US,San Francisco Bay Area
+"Bay Area, California",37.788,-122.356,United States,US,San Francisco Bay Area
+BeiJing,39.906,116.391,China,CN,Beijing
+Beijing,39.906,116.391,China,CN,Beijing
+Belgium,50.640,4.667,Belgium,BE,Belgium
+"Belgrade, Serbia",44.815,20.446,Serbia,RS,Belgrade
+Bellevue WA,47.614,-122.192,United States,US,Bellevue
+Berlin,52.517,13.395,Germany,DE,Berlin
+"Berlin, Germany",52.517,13.395,Germany,DE,Berlin
+"Bernal, Buenos Aires - Argentina",-34.718,-58.300,Argentina,AR,Bernal
+"Bochum, Germany",51.482,7.220,Germany,DE,Bochum
+Bogotá,4.653,-74.084,Colombia,CO,Bogota
+"Bonn, Germany",50.735,7.102,Germany,DE,Bonn
+"Bordeaux, France",44.841,-0.580,France,FR,Bordeaux
+Boston,42.359,-71.058,United States,US,Boston
+"Brasília, Brazil",-15.794,-47.883,Brazil,BR,Brasília
+Brazil,-10.333,-53.200,Brazil,BR,Brazil
+Brighton,50.821,-0.140,United Kingdom,GB,Brighton
+"Brisbane, Australia",-27.469,153.024,Australia,AU,Brisbane
+"Bristol, UK",51.443,-2.582,United Kingdom,GB,Bristol
+"Brugg, Switzerland",47.482,8.209,Switzerland,CH,Brugg
+Brussels,50.847,4.352,Belgium,BE,Brussels
+"Bryan, TX",30.674,-96.370,United States,US,Bryan
+"Bucharest, Romania",44.436,26.103,Romania,RO,Bucharest
+Budapest,47.482,19.145,Hungary,HU,Budapest
+"Budapest, Hungary",47.498,19.040,Hungary,HU,Budapest
+"Buenos Aires, Argentina",-34.610,-58.389,Argentina,AR,Buenos Aires
+"Burbank, CA",34.181,-118.307,United States,US,Burbank
+"Cairo, Egypt",30.044,31.236,Egypt,EG,Cairo
+California,36.701,-118.756,United States,US,California
+"California, USA",36.701,-118.756,United States,US,California
+"Cambridge, UK",52.198,0.139,United Kingdom,GB,Cambridge
+Canada,61.067,-107.992,Canada,CA,Canada
+Cape Town,-33.929,18.417,South Africa,ZA,Cape Town
+"Cape Town, South Africa",-33.929,18.417,South Africa,ZA,Cape Town
+Carinthia,46.750,13.833,Austria,AT,Carinthia
+Chengdu,30.660,104.063,China,CN,Chengdu
+"Chennai, Tamil Nadu, India",13.080,80.281,India,IN,Chennai
+"Chessington, United Kingdom",51.358,-0.299,United Kingdom,GB,Chessington
+"Chicago, IL",41.876,-87.624,United States,US,Chicago
+China,34.541,108.924,China,CN,China
+China Nanking,32.044,118.779,China,CN,Nanjing City
+China-Guangzhou,23.129,113.259,China,CN,Guangzhou City
+Chongqing,30.055,107.875,China,CN,Chongqing
+"Chongqing, China",30.055,107.875,China,CN,Chongqing
+"Cincinnati, OH",39.101,-84.513,United States,US,Cincinnati
+Cloud,39.485,-97.671,United States,US,Cloud County
+"Cobleskill, NY",42.678,-74.485,United States,US,Village of Cobleskill
+Cupertino,37.323,-122.032,United States,US,Cupertino
+Cyberspace,52.270,104.303,Russia,RU,Cyberspace
+Cyprus,34.982,33.145,Cyprus,CY,Cyprus
+Czech Republic,49.744,15.338,Czechia,CZ,Czechia
+Danmark,55.670,10.333,Denmark,DK,Denmark
+Denmark,55.670,10.333,Denmark,DK,Denmark
+Depends,47.153,0.653,France,FR,Le Pré des Dépends
+Desert,33.388,-96.402,United States,US,Desert
+Dirty Jersey,40.724,-74.220,United States,US,DIRTY LAUNDRY EXPRESS
+Dortmund,51.514,7.465,Germany,DE,Dortmund
+"Drammen, Norway",59.696,10.176,Norway,NO,Drammen
+Dubai,25.074,55.189,United Arab Emirates,AE,Dubai
+"Dubai, UAE",25.074,55.189,United Arab Emirates,AE,Dubai
+EU,50.049,1.418,France,FR,Eu
+Earth,34.233,-102.411,United States,US,Earth
+"Earth, Solar system",-44.003,170.478,New Zealand,NZ,Earth
+"East Coast, US",41.381,-74.313,United States,US,East Coast
+"Edmonton, AB",53.546,-113.491,Canada,CA,Edmonton
+Egypt,26.254,29.268,Egypt,EG,Egypt
+Eindhoven Netherlands,51.449,5.450,Netherlands,NL,Eindhoven
+Erebor,51.407,5.545,Netherlands,NL,Erebor
+"Erfurt, Germany",50.978,11.029,Germany,DE,Erfurt
+Europe,51.000,10.000,,,Europe
+"Europe, Berlin",48.880,2.327,France,FR,Liège
+"Europe, mostly",,,,,
+"Flensburg, Germany",54.783,9.433,Germany,DE,Flensburg
+"Florence, Italy",43.770,11.256,Italy,IT,Florence
+"Fort Collins, CO",40.587,-105.077,United States,US,Fort Collins
+France,46.603,1.888,France,FR,France
+"Geneva, Switzerland",46.202,6.147,Switzerland,CH,Geneva
+Georgia,41.681,44.029,Georgia,GE,Georgia
+Germany,51.164,10.448,Germany,DE,Germany
+"Germany, Hamburg",53.550,10.001,Germany,DE,Hamburg
+"Germany, Karlsruhe",49.007,8.403,Germany,DE,Karlsruhe
+"Germany, Paderborn",51.718,8.753,Germany,DE,Paderborn
+"Glasgow, Scotland",55.861,-4.250,United Kingdom,GB,Glasgow
+"Glattpark, Zürich",47.423,8.567,Switzerland,CH,Glattpark
+Glocal,4.016,9.148,Cameroon,CM,Glocal Gaz
+Graveyard,-36.987,147.507,Australia,AU,Graveyard
+"Graz, Austria",47.071,15.438,Austria,AT,Graz
+Greece,38.995,21.988,Greece,GR,Greece
+"Grenaa, Denmark || Szeged, Hungary",,,,,
+Grenoble,45.188,5.736,France,FR,Grenoble
+"Grenoble, France",45.188,5.736,France,FR,Grenoble
+Groningen,53.219,6.568,Netherlands,NL,Groningen
+GuangZhou,23.129,113.259,China,CN,Guangzhou City
+Guangzhou,23.129,113.259,China,CN,Guangzhou City
+"Guangzhou, China",23.129,113.259,China,CN,Guangzhou City
+Hamburg,53.550,10.001,Germany,DE,Hamburg
+"Hamburg, Germany",53.550,10.001,Germany,DE,Hamburg
+"Hamilton, New Zealand",-37.788,175.282,New Zealand,NZ,Hamilton City
+"Hamm, Germany",51.681,7.819,Germany,DE,Hamm
+"HangZhou,China",30.249,120.205,China,CN,Hangzhou City
+Hangzhou,30.249,120.205,China,CN,Hangzhou City
+"Hangzhou, China",30.249,120.205,China,CN,Hangzhou City
+Hanoi,21.028,105.854,Vietnam,VN,Hà Nội
+"Ho Chi Minh City, Vietnam",10.779,106.692,Vietnam,VN,War Remnants Museum
+Hong Kong,22.282,114.158,China,CN,Hong Kong
+Hungary,47.182,19.506,Hungary,HU,Hungary
+"Hungary, Budapest",47.482,19.145,Hungary,HU,Budapest
+"Huntsville, AL",34.730,-86.586,United States,US,Huntsville
+Hyderabad,17.361,78.474,India,IN,Hyderabad
+"ISF, IR",,,,,
+India,22.351,78.668,India,IN,India
+Iran,32.648,54.564,Iran,IR,Iran
+Ireland,52.865,-7.979,Ireland,IE,Ireland
+"Irvine, CA, US",33.686,-117.826,United States,US,Irvine
+Israel,30.812,34.859,Israel,IL,Israel
+"Istanbul, Turkey",41.006,28.976,Turkey,TR,Istanbul
+Italy,42.638,12.674,Italy,IT,Italy
+Japan,36.575,139.239,Japan,JP,Japan
+Jaraguá do Sul - SC,-26.490,-49.078,Brazil,BR,Jaraguá do Sul
+"Jiangsu, China",33.000,120.000,China,CN,Jiangsu
+Karlsruhe,49.007,8.403,Germany,DE,Karlsruhe
+"Karlsruhe, Germany",49.007,8.403,Germany,DE,Karlsruhe
+Kehl,48.573,7.811,Germany,DE,Kehl
+"Kempten, Germany",47.727,10.317,Germany,DE,Kempten (Allgäu)
+"Kent, England",51.207,0.721,United Kingdom,GB,Kent
+Kolkata,22.573,88.364,India,IN,Kolkata
+Korea,50.484,23.759,Poland,PL,Żerniki
+"Kraków, Poland",50.062,19.937,Poland,PL,Krakow
+"Kushtia, Dhaka, Bangladesh",23.751,89.640,Bangladesh,BD,Barbakpur
+Latvia,56.841,24.754,Latvia,LV,Latvia
+Lausanne,46.522,6.633,Switzerland,CH,Lausanne
+"Leipheim, Germany",48.449,10.221,Germany,DE,Leipheim
+"Leipzig, Germany",51.341,12.375,Germany,DE,Leipzig
+"Lille, France",50.637,3.064,France,FR,Lille
+Lilongwe,-13.988,33.768,Malawi,MW,Lilongwe
+"Lilongwe, Malawi",-13.988,33.768,Malawi,MW,Lilongwe
+"Limassol, Cyprus",34.685,33.033,Cyprus,CY,Limassol
+Lisboa,38.708,-9.137,Portugal,PT,Lisbon
+"Lisboa, Portugal",38.708,-9.137,Portugal,PT,Lisbon
+"Lisbon, Portugal",38.708,-9.137,Portugal,PT,Lisbon
+"Loma Linda, CA",34.054,-117.261,United States,US,Loma Linda
+London,51.507,-0.128,United Kingdom,GB,London
+"London, UK",51.500,-0.192,United Kingdom,GB,London
+Los Angeles,34.054,-118.243,United States,US,Los Angeles
+"Louisville, KY, USA",38.256,-85.758,United States,US,Louisville
+Luxembourg,49.816,6.130,Luxembourg,LU,Luxembourg
+Lyon,45.758,4.832,France,FR,Lyon
+"Löhne, Germany",52.199,8.714,Germany,DE,Löhne
+MTP,42.765,59.598,Uzbekistan,UZ,Kegeyli
+"Macomb, Detroit, Michigan, America",42.482,-83.083,United States,US,Warren
+Madrid,40.417,-3.704,Spain,ES,Madrid
+Manchester,53.442,-2.232,United Kingdom,GB,Manchester
+"Mannheim, Germany",49.489,8.467,Germany,DE,Mannheim
+"Mansfield, TX",32.563,-97.142,United States,US,Mansfield
+Martinaise,41.033,14.298,Italy,IT,Marcianise
+"Maryland, USA",39.380,-77.278,United States,US,New Market
+Massachusetts,42.379,-72.032,United States,US,Massachusetts
+"Massachusetts, USA",41.849,-70.775,United States,US,Carver
+Mauritania,20.254,-9.240,Mauritania,MR,Mauritania
+"Melbourne, Australia",-37.814,144.963,Australia,AU,Melbourne
+Mexico City,19.321,-99.151,Mexico,MX,Mexico City
+"Miami, FL",25.774,-80.194,United States,US,Miami
+"Miamisburg, OH",39.643,-84.287,United States,US,Miamisburg
+"Minneapolis, MN",44.977,-93.265,United States,US,Minneapolis
+"Moline, IL",41.506,-90.516,United States,US,Moline
+Mom's basement,43.683,-79.327,Canada,CA,Toronto
+Monterrey,25.680,-100.315,Mexico,MX,Monterrey
+"Montreal, Canada",45.503,-73.570,Canada,CA,Montreal
+"Montreal, QC, Canada",45.503,-73.570,Canada,CA,Montreal
+Morocco,31.173,-7.336,Morocco,MA,Morocco
+Moscow,55.626,37.606,Russia,RU,Moscow
+"Moscow, Russia",55.626,37.606,Russia,RU,Moscow
+"Mostar, BA",43.344,17.808,Bosnia and Herzegovina,BA,Local community Centar II
+"Mumbai, Maharashtra",19.055,72.869,India,IN,Mumbai
+Munich,48.137,11.575,Germany,DE,Munich
+"Munich, DE",48.137,11.575,Germany,DE,Munich
+"Munich, Germany",48.137,11.575,Germany,DE,Munich
+NY,50.286,5.482,Belgium,BE,Hotton
+NYC,40.739,-73.975,United States,US,New York
+"Nanjing, Jiangsu, PRC",32.044,118.779,China,CN,Nanjing
+Nantes,47.219,-1.554,France,FR,Nantes
+"Nantes, France",47.219,-1.554,France,FR,Nantes
+Naples,40.836,14.249,Italy,IT,Naples
+Netherlands,52.243,5.634,Netherlands,NL,Netherlands
+New Hampshire,43.485,-71.655,United States,US,New Hampshire
+New York,40.713,-74.006,United States,US,New York
+New York City,40.772,-73.984,United States,US,New York
+"New York, NY",40.713,-74.006,United States,US,New York
+"New York, New York",40.713,-74.006,United States,US,New York
+"New York, USA",40.751,-73.969,United States,US,New York
+"Nijmegen, The Netherlands",51.846,5.871,Netherlands,NL,Nijmegen
+Ningbo,29.872,121.550,China,CN,Ningbo
+Noisy-Le-Grand,48.849,2.552,France,FR,Noisy-le-Grand
+None of your beeswax,,,,,
+"Norfolk, United Kingdom",52.667,1.000,United Kingdom,GB,Norfolk
+North Carolina,35.673,-79.039,United States,US,North Carolina
+Norway,61.153,8.788,Norway,NO,Norway
+Nueremberg / Germany,49.454,11.077,Germany,DE,Nuremberg
+"Nuremberg, Germany",49.454,11.077,Germany,DE,Nuremberg
+Nürnberg,49.454,11.077,Germany,DE,Nuremberg
+"Oklahoma City, Oklahoma",35.473,-97.517,United States,US,Oklahoma City
+Oldenburg,53.139,8.215,Germany,DE,Oldenburg
+"Omsk, Russia",54.983,73.375,Russia,RU,Omsk
+Ontario Canada,50.001,-86.001,Canada,CA,Ontario
+"Ontario, Canada",50.001,-86.001,Canada,CA,Ontario
+"Orem, UT",40.298,-111.694,United States,US,Orem
+Oslo,59.913,10.739,Norway,NO,Oslo
+"Oslo, Norway",59.913,10.739,Norway,NO,Oslo
+"Ottawa, Canada",45.421,-75.690,Canada,CA,Ottawa
+Oulu,65.012,25.470,Finland,FI,Oulu
+"Oulu, Finland",65.012,25.470,Finland,FI,Oulu
+Ourinhos-SP,-22.978,-49.868,Brazil,BR,Ourinhos
+Oxford United Kingdom,51.752,-1.258,United Kingdom,GB,Oxford
+"Oxford, UK",53.800,-1.745,United Kingdom,GB,Bradford
+PARIS,48.853,2.348,France,FR,Paris
+PDX,45.587,-122.593,United States,US,Portland
+Pakistan,30.331,71.247,Pakistan,PK,Pakistan
+Paris,48.853,2.348,France,FR,Paris
+"Paris, France",48.853,2.348,France,FR,Paris
+Poland,52.216,19.134,Poland,PL,Poland
+"Poland, Gdynia",54.523,18.604,Poland,PL,Gdynia
+"Porto, Portugal",41.150,-8.610,Portugal,PT,Porto
+Portugal,39.662,-8.135,Portugal,PT,Portugal
+Prague,50.087,14.421,Czechia,CZ,Prague
+Pskov,57.817,28.334,Russia,RU,Pskov
+"Pune, India",18.521,73.855,India,IN,Pune
+"Québec, Canada",52.476,-71.826,Canada,CA,Quebec
+"RU, MSK",45.943,4.819,France,FR,Reyrieux
+"Raleigh, NC",35.780,-78.639,United States,US,Raleigh
+"Rennes, Bzh, France",48.102,-1.660,France,FR,Rennes
+Republic of Korea,36.582,127.525,South Korea,KR,Cheongju
+Rio de Janeiro,-22.911,-43.209,Brazil,BR,Rio de Janeiro
+"Rochester, NY",43.157,-77.615,United States,US,Rochester
+Romania,45.985,24.686,Romania,RO,Romania
+"Rome, Italy",41.893,12.483,Italy,IT,Rome
+Rumia,54.570,18.393,Poland,PL,Rumia
+Russia,64.686,97.745,Russia,RU,Russia
+Russia Moscow,55.626,37.606,Russia,RU,Moscow
+SH,31.231,121.470,China,CN,Shanghai
+SMILEUPPS-D27D4CAC29,,,,,
+"SPb, Russia",59.920,30.462,Russia,RU,SPb
+"SUKKUR,PAKISTAN",27.696,68.859,Pakistan,PK,Sukkur
+"Sacramento, CA",38.581,-121.494,United States,US,Sacramento
+"Saint Paul, Minnesota, USA",44.950,-93.093,United States,US,Saint Paul
+"Saint Petersburg, Florida",27.771,-82.634,United States,US,Saint Petersburg
+Salt Lake City,40.760,-111.887,United States,US,Salt Lake City
+"Salt Lake City, UT",40.760,-111.887,United States,US,Salt Lake City
+"Salzburg, AT",47.798,13.046,Austria,AT,Salzburg
+"Salzburg, Austria",47.798,13.046,Austria,AT,Salzburg
+"San Diego, CA",32.716,-117.164,United States,US,San Diego
+"San Diego, CA, USA",32.716,-117.164,United States,US,San Diego
+"San Diego, US - Athens, GR",32.756,-117.069,United States,US,San Diego
+San Francisco,37.788,-122.408,United States,US,San Francisco
+San Francisco Bay Area,37.788,-122.356,United States,US,San Francisco Bay Area
+"San Francisco, CA",37.788,-122.408,United States,US,San Francisco
+"San Francisco, CA 🇺🇸",37.788,-122.408,United States,US,San Francisco
+Scotland,56.786,-4.114,United Kingdom,GB,Scotland
+Seattle,47.604,-122.330,United States,US,Seattle
+"Seattle, WA",47.604,-122.330,United States,US,Seattle
+"Seattle, Washington",47.604,-122.330,United States,US,Seattle
+"Seongnam, Gyeonggi-do / Korea",37.420,127.126,South Korea,KR,Seongnam-si
+Seoul,37.567,126.978,South Korea,KR,Seoul
+"Seoul · Daegu · Busan, Korea",35.870,128.693,South Korea,KR,Daegu
+"Seoul, Korea",37.567,126.978,South Korea,KR,Seoul
+"Seoul, Korea (Republic of)",37.531,126.976,South Korea,KR,국방부
+"Seoul, Republic of Korea",37.567,126.978,South Korea,KR,Seoul
+"Seoul, South Korea",37.567,126.978,South Korea,KR,Seoul
+Serbia,44.024,21.077,Serbia,RS,Serbia
+Shanghai,31.231,121.470,China,CN,Shanghai
+Shanghai China,31.231,121.470,China,CN,Shanghai
+"Shanghai, China",31.231,121.470,China,CN,Shanghai
+Shenzhen,22.545,114.055,China,CN,Shenzhen
+"Shenzhen, China",22.545,114.055,China,CN,Shenzhen
+"Shymkent, Kazakhstan",42.315,69.588,Kazakhstan,KZ,Shymkent
+Singapore,1.357,103.819,Singapore,SG,Singapore
+Slovenia,46.120,14.815,Slovenia,SI,Slovenia
+"Sofia, Bulgaria",42.698,23.322,Bulgaria,BG,Sofia
+South Africa,-28.817,24.992,South Africa,ZA,South Africa
+"South Africa, Cape Town",-33.929,18.417,South Africa,ZA,Cape Town
+South Korea,36.638,127.696,South Korea,KR,South Korea
+"Spain, Oviedo",43.353,-5.880,Spain,ES,Oviedo
+"St. Petersburg, Russia",59.961,30.159,Russia,RU,Saint Petersburg
+State of Denial,37.822,-83.560,United States,US,Wall Of Denial
+"Stevens Point, WI",44.523,-89.584,United States,US,Stevens Point
+"Stillwater, MN, USA",45.056,-92.808,United States,US,Stillwater
+Stockholm,59.325,18.071,Sweden,SE,Stockholm
+"Stockholm, Sweden",59.325,18.071,Sweden,SE,Stockholm
+Suzhou,31.311,120.621,China,CN,Suzhou City
+Sweden,59.675,14.521,Sweden,SE,Sweden
+Switzerland,46.799,8.232,Switzerland,CH,Switzerland
+Sydney,-33.870,151.208,Australia,AU,Sydney
+"Sydney, Australia",-33.870,151.208,Australia,AU,Sydney
+"Syktyvkar, Russia",61.669,50.835,Russia,RU,Syktyvkar
+"Syracuse, New York",43.048,-76.147,United States,US,City of Syracuse
+"Szczecin, Poland",53.430,14.593,Poland,PL,Szczecin
+São Paulo,-23.551,-46.633,Brazil,BR,São Paulo
+"São Paulo, Brazil",-23.551,-46.633,Brazil,BR,São Paulo
+"TX, USA",31.264,-98.546,United States,US,Texas
+Tacoma WA,47.246,-122.438,United States,US,Tacoma
+Tacoma WA USA,47.246,-122.438,United States,US,Tacoma
+Taiwan,23.974,120.982,Taiwan,TW,Taiwan
+"Tallahassee, FL",30.438,-84.281,United States,US,Tallahassee
+"Tasmania, Australia",-42.035,146.637,Australia,AU,Tasmania
+"Tel Aviv, Israel",32.085,34.782,Israel,IL,Tel-Aviv
+Tel-Aviv Israel,32.085,34.782,Israel,IL,Tel-Aviv
+Texas,31.264,-98.546,United States,US,Texas
+Thailand,14.897,100.833,Thailand,TH,Thailand
+"The Hague, Netherlands",52.075,4.270,Netherlands,NL,The Hague
+The Netherlands,52.243,5.634,Netherlands,NL,Netherlands
+Thessaloniki Greece,40.640,22.935,Greece,GR,Thessaloniki
+Tokyo,35.677,139.764,Japan,JP,Tokyo
+"Tokyo, Japan",35.677,139.764,Japan,JP,Tokyo
+Toronto,43.653,-79.384,Canada,CA,Toronto
+"Toronto, Canada",43.653,-79.384,Canada,CA,Toronto
+Totogro,59.933,30.347,Russia,RU,Saint Petersburg
+"Toulouse, France",43.604,1.444,France,FR,Toulouse
+"Trento, Italy",46.103,11.130,Italy,IT,Provincia di Trento
+Trier,49.760,6.644,Germany,DE,Trier
+"Tulsa, OK",36.156,-95.993,United States,US,Tulsa
+"Turin, Italy",45.068,7.682,Italy,IT,Turin
+Turkey,39.294,35.232,Turkey,TR,Turkey
+Twin Cities via Chicago (via WI via MN),46.082,13.202,Italy,IT,Udine
+UAE,24.000,53.999,United Arab Emirates,AE,United Arab Emirates
+UK,54.702,-3.277,United Kingdom,GB,United Kingdom
+UK / London,51.507,-0.128,United Kingdom,GB,Greater London
+US,39.784,-100.446,United States,US,United States
+USA,39.784,-100.446,United States,US,United States
+Ukraine,49.487,31.272,Ukraine,UA,Ukraine
+"Ukraine, Kyiv",50.450,30.524,Ukraine,UA,Kyiv
+Ulm,48.398,9.991,Germany,DE,Ulm
+United Kingdom,54.702,-3.277,United Kingdom,GB,United Kingdom
+United States,39.784,-100.446,United States,US,United States
+United States of America,39.784,-100.446,United States,US,United States
+Utah,39.423,-111.714,United States,US,Utah
+Utrecht,52.091,5.122,Netherlands,NL,Utrecht
+"Vernon, CT",41.838,-72.466,United States,US,Vernon
+Viamão,-30.082,-51.026,Brazil,BR,Viamão
+Vienna,48.208,16.373,Austria,AT,Vienna
+"Vienna, Austria",48.208,16.373,Austria,AT,Vienna
+Viet Nam,15.927,107.965,Vietnam,VN,Vietnam
+Vietnam,15.927,107.965,Vietnam,VN,Vietnam
+"Vilnius, Lithuania",54.687,25.283,Lithuania,LT,Vilnius
+Virginia,37.123,-78.493,United States,US,Virginia
+Virgo Supercluster,,,,,
+Vladimir,56.129,40.408,Russia,RU,Vladimir
+Warsaw,52.232,21.007,Poland,PL,Warsaw
+Washington,38.895,-77.036,United States,US,Washington
+"Washington, United States",38.895,-77.036,United States,US,Washington
+"Wegberg, Germany, Europe, Earth, Alpha Quadrant",,,,,
+"Weiterstadt, Germany",49.918,8.592,Germany,DE,Weiterstadt
+"Wiesbaden, Gernaby",50.082,8.242,Germany,DE,Wiesbaden
+Wolfsburg,52.421,10.786,Germany,DE,Wolfsburg
+Wuppertal,51.264,7.178,Germany,DE,Wuppertal
+"Yerevan, Armenia",40.178,44.513,Armenia,AM,Yerevan
+Zhejiang,29.000,120.000,China,CN,Zhejiang
+"Zuid Holland, The Netherlands",51.997,4.560,Netherlands,NL,South Holland
+Zurich,47.374,8.541,Switzerland,CH,Zurich
+"Zurich, Switzerland",47.374,8.541,Switzerland,CH,Zurich
+"Zürich, Switzerland",47.374,8.541,Switzerland,CH,Zurich
+aamchi mumbai,19.146,72.823,India,IN,Mumbai
+beijing,39.906,116.391,China,CN,Beijing
+excited!,51.688,6.143,Germany,DE,eXcited
+germany,51.164,10.448,Germany,DE,Germany
+hack//MetaVerse,,,,,
+hanghzou,30.249,120.205,China,CN,Hangzhou
+me @ ~,42.776,19.202,Montenegro,ME,Montenegro
+montreal,45.503,-73.570,Canada,CA,Montreal
+nanning,22.816,108.318,China,CN,Nanning
+neverland :),51.779,-4.805,United Kingdom,GB,Neverland
+paris,48.859,2.320,France,FR,Paris
+shanghai,31.231,121.470,China,CN,Shanghai
+shenzhen,22.545,114.055,China,CN,Shenzhen
+the Netherlands,52.243,5.634,Netherlands,NL,Netherlands
+中国,34.541,108.924,China,CN,China
+北京,39.906,116.391,China,CN,Beijing
+海南海口,20.046,110.196,China,CN,Haikou City
+湖北省武汉市,30.579,114.292,China,CN,Wuhan
+"🌵 las vegas, nv",36.167,-115.148,United States,US,Las Vegas

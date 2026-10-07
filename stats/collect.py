@@ -20,6 +20,7 @@ import urllib.request
 from collections import Counter, OrderedDict
 from pathlib import Path
 
+from .cloudflare import collect_cloudflare
 from .config import Project
 from .github import GitHub
 
@@ -216,4 +217,7 @@ def collect_project(gh: GitHub, p: Project, git_dir: Path | None = None, today: 
     collect_forks(gh, p)
     releases = collect_releases(gh, p)
     collect_commits(p, git_dir)
-    return collect_snapshot(gh, p, releases, today)
+    snap = collect_snapshot(gh, p, releases, today)
+    for host, total in collect_cloudflare(p, p.cloudflare_hosts).items():
+        snap[f"cf_requests:{host}"] = total
+    return snap

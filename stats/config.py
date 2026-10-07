@@ -16,6 +16,7 @@ class Project:
     github: str
     docker_images: list[str] = field(default_factory=list)
     primary_image: str | None = None
+    cloudflare_hosts: list[str] = field(default_factory=list)
 
     @property
     def data_dir(self) -> Path:

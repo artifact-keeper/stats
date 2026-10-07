@@ -14,3 +14,6 @@ docker_images = [
 ]
 # Image whose pulls best approximate "installs" (every deployment pulls it).
 primary_image = "artifactkeeper/backend"
+# Hosts behind Cloudflare whose requests-by-country approximate installs.
+# Needs CLOUDFLARE_API_TOKEN + CLOUDFLARE_ZONE_ID secrets.
+cloudflare_hosts = ["get.artifactkeeper.com"]
