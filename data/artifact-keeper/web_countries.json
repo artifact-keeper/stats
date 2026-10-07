@@ -1,5 +1,5 @@
 {
- "source": "Cloudflare zone analytics, eyeball (non-bot) requests by client country",
+ "source": "Cloudflare zone analytics, client requests by country (excludes Worker subrequests)",
  "days": 7,
  "start": "2026-09-30",
  "end": "2026-10-06",
