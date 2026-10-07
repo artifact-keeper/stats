@@ -13,6 +13,12 @@ from typing import Any, Iterator
 API = "https://api.github.com"
 
 
+class ApiError(RuntimeError):
+    def __init__(self, code: int, url: str, body: str):
+        super().__init__(f"GitHub API {code} for {url}: {body[:300]}")
+        self.code = code
+
+
 def _token() -> str | None:
     tok = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
     if tok:
@@ -53,7 +59,7 @@ class GitHub:
                 if e.code == 403 and "not accessible by integration" in body and not is_graphql and not self.rest_anonymous:
                     self.rest_anonymous = True
                     return self._request(url, accept=accept, method=method, body=body)
-                raise RuntimeError(f"GitHub API {e.code} for {url}: {body[:300]}") from None
+                raise ApiError(e.code, url, body) from None
         raise RuntimeError(f"GitHub API gave up on {url}")
 
     def get(self, path: str, **params: Any) -> Any:
@@ -85,10 +91,10 @@ class GitHub:
         return data["data"]
 
     def try_get(self, path: str, **params: Any) -> Any | None:
-        """GET that returns None on 403/404 (e.g. traffic without push access)."""
+        """GET that returns None when access is refused (e.g. traffic without push access)."""
         try:
             return self.get(path, **params)
-        except urllib.error.HTTPError as e:
-            if e.code in (403, 404):
+        except ApiError as e:
+            if e.code in (401, 403, 404):
                 return None
             raise
