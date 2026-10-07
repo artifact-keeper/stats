@@ -18,6 +18,7 @@ from pathlib import Path
 
 from .config import DATA_DIR, Project
 from .github import GitHub
+from . import graph
 
 CACHE = DATA_DIR / "geocode_cache.csv"
 CACHE_COLS = ["query", "lat", "lon", "country", "country_code", "place"]
@@ -43,29 +44,25 @@ def _norm(loc: str) -> str:
     return loc
 
 
-def logins(gh: GitHub, p: Project) -> tuple[list[str], list[str], list[str]]:
-    stars = [s["user"]["login"] for s in gh.paginate(f"/repos/{p.github}/stargazers", accept="application/vnd.github.star+json")
-             if s.get("user")]
-    forks = [f["owner"]["login"] for f in gh.paginate(f"/repos/{p.github}/forks") if f.get("owner")]
-    contributors = [c["login"] for c in gh.paginate(f"/repos/{p.github}/contributors") if c.get("login")]
-    return stars, forks, contributors
-
-
-def locations(gh: GitHub, users: list[str]) -> dict[str, str]:
-    """login -> location string, via GraphQL in batches of 100 aliases."""
-    out: dict[str, str] = {}
-    users = sorted(u for u in set(users) if "[bot]" not in u)
-    for i in range(0, len(users), 100):
-        batch = users[i:i + 100]
-        parts = [f'u{j}: repositoryOwner(login: {json.dumps(login)}) {{ ... on User {{ location }} ... on Organization {{ location }} }}'
-                 for j, login in enumerate(batch)]
-        data = gh.graphql("query { " + " ".join(parts) + " }")
-        for j, login in enumerate(batch):
-            node = data.get(f"u{j}") or {}
-            loc = node.get("location")
-            if loc and _norm(loc):
-                out[login] = _norm(loc)
-    return out
+def people(gh: GitHub, p: Project) -> tuple[dict[str, str], set[str], set[str], set[str]]:
+    """Return (login -> normalised location) plus the stargazer, forker and contributor login sets."""
+    locs: dict[str, str] = {}
+    stars: set[str] = set()
+    forks: set[str] = set()
+    contribs: set[str] = set()
+    for _, person in graph.stargazers(gh, p.github):
+        stars.add(person.login)
+        if person.location and _norm(person.location):
+            locs[person.login] = _norm(person.location)
+    for _, person in graph.forks(gh, p.github):
+        forks.add(person.login)
+        if person.location and _norm(person.location):
+            locs[person.login] = _norm(person.location)
+    for person in graph.contributors(gh, p.github):
+        contribs.add(person.login)
+        if person.location and _norm(person.location):
+            locs[person.login] = _norm(person.location)
+    return locs, stars, forks, contribs
 
 
 def _load_cache() -> dict[str, dict]:
@@ -144,15 +141,13 @@ def ensure_geocoded(queries: set[str]) -> dict[str, dict]:
 
 
 def build_geo(gh: GitHub, p: Project) -> dict:
-    stars, forks, contributors = logins(gh, p)
-    locs = locations(gh, stars + forks + contributors)
+    locs, star_set, fork_set, contrib_set = people(gh, p)
     cache = ensure_geocoded(set(locs.values()))
 
     # Aggregate to places (lat/lon rounded) and to countries. No logins are written out.
     places: dict[tuple[str, str], dict] = {}
     countries: Counter = Counter()
     country_names: dict[str, str] = {}
-    star_set, fork_set, contrib_set = set(stars), set(forks), set(contributors)
     located = 0
     for login, loc in locs.items():
         g = cache.get(loc)
@@ -176,9 +171,9 @@ def build_geo(gh: GitHub, p: Project) -> dict:
     out = {
         "project": p.name,
         "repo": p.github,
-        "people_total": len(set(stars) | set(forks) | set(contributors)),
-        "contributors_total": len(set(contributors)),
-        "contributors_located": sum(1 for c in set(contributors) if c in locs and cache.get(locs[c], {}).get("lat")),
+        "people_total": len(star_set | fork_set | contrib_set),
+        "contributors_total": len(contrib_set),
+        "contributors_located": sum(1 for c in contrib_set if c in locs and cache.get(locs[c], {}).get("lat")),
         "people_with_location": len(locs),
         "people_located": located,
         "countries": [{"code": c, "name": country_names[c], "people": n} for c, n in countries.most_common()],

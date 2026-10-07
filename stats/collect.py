@@ -23,6 +23,7 @@ from pathlib import Path
 from .cloudflare import collect_cloudflare
 from .config import Project
 from .github import GitHub
+from . import graph
 
 SNAPSHOT_COLUMNS = ["date", "metric", "value"]
 
@@ -54,31 +55,19 @@ def _write_snapshots(path: Path, data: dict[tuple[str, str], str]) -> None:
 # ----------------------------------------------------------------------------
 
 def collect_stars(gh: GitHub, p: Project) -> list[str]:
-    stamps = [s["starred_at"] for s in gh.paginate(f"/repos/{p.github}/stargazers", accept="application/vnd.github.star+json")]
-    stamps.sort()
+    stamps = sorted(ts for ts, _ in graph.stargazers(gh, p.github))
     _write_csv(p.data_dir / "stars.csv", ["starred_at"], [(s,) for s in stamps])
     return stamps
 
 
 def collect_forks(gh: GitHub, p: Project) -> list[str]:
-    stamps = [f["created_at"] for f in gh.paginate(f"/repos/{p.github}/forks", sort="oldest")]
-    stamps.sort()
+    stamps = sorted(ts for ts, _ in graph.forks(gh, p.github))
     _write_csv(p.data_dir / "forks.csv", ["created_at"], [(s,) for s in stamps])
     return stamps
 
 
 def collect_releases(gh: GitHub, p: Project) -> list[dict]:
-    rels = []
-    for r in gh.paginate(f"/repos/{p.github}/releases"):
-        if r.get("draft"):
-            continue
-        rels.append({
-            "tag": r["tag_name"],
-            "published_at": r["published_at"],
-            "prerelease": r["prerelease"],
-            "downloads": sum(a["download_count"] for a in r.get("assets", [])),
-        })
-    rels.sort(key=lambda r: r["published_at"])
+    rels = graph.releases(gh, p.github)
     _write_csv(p.data_dir / "releases.csv", ["tag", "published_at", "prerelease", "downloads"],
                [(r["tag"], r["published_at"], r["prerelease"], r["downloads"]) for r in rels])
     return rels
@@ -173,8 +162,11 @@ def collect_snapshot(gh: GitHub, p: Project, releases: list[dict], today: str) -
         "release_downloads": sum(x["downloads"] for x in releases),
         "releases": sum(1 for x in releases if not x["prerelease"]),
     }
-    contributors = sum(1 for _ in gh.paginate(f"/repos/{p.github}/contributors", anon="true"))
-    snap["contributors"] = contributors
+    try:
+        snap["contributors"] = sum(1 for _ in gh.paginate(f"/repos/{p.github}/contributors", anon="true"))
+    except RuntimeError:
+        # REST refused (Actions token): count distinct commit authors with a GitHub account instead.
+        snap["contributors"] = len(graph.contributors(gh, p.github))
 
     for image in p.docker_images:
         pulls = docker_pulls(image)

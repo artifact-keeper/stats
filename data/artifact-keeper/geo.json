@@ -1,7 +1,7 @@
 {
  "project": "artifact-keeper",
  "repo": "artifact-keeper/artifact-keeper",
- "people_total": 1206,
+ "people_total": 1205,
  "contributors_total": 73,
  "contributors_located": 30,
  "people_with_location": 612,
@@ -38,8 +38,8 @@
    "people": 19
   },
   {
-   "code": "KR",
-   "name": "South Korea",
+   "code": "CH",
+   "name": "Switzerland",
    "people": 17
   },
   {
@@ -48,13 +48,13 @@
    "people": 17
   },
   {
-   "code": "CH",
-   "name": "Switzerland",
+   "code": "AU",
+   "name": "Australia",
    "people": 17
   },
   {
-   "code": "AU",
-   "name": "Australia",
+   "code": "KR",
+   "name": "South Korea",
    "people": 17
   },
   {
@@ -68,14 +68,19 @@
    "people": 15
   },
   {
+   "code": "IN",
+   "name": "India",
+   "people": 11
+  },
+  {
    "code": "BR",
    "name": "Brazil",
    "people": 11
   },
   {
-   "code": "IN",
-   "name": "India",
-   "people": 11
+   "code": "PL",
+   "name": "Poland",
+   "people": 9
   },
   {
    "code": "SE",
@@ -85,11 +90,6 @@
   {
    "code": "IT",
    "name": "Italy",
-   "people": 9
-  },
-  {
-   "code": "PL",
-   "name": "Poland",
    "people": 9
   },
   {
@@ -113,11 +113,6 @@
    "people": 6
   },
   {
-   "code": "EG",
-   "name": "Egypt",
-   "people": 5
-  },
-  {
    "code": "HU",
    "name": "Hungary",
    "people": 5
@@ -133,6 +128,16 @@
    "people": 5
   },
   {
+   "code": "EG",
+   "name": "Egypt",
+   "people": 5
+  },
+  {
+   "code": "TR",
+   "name": "Turkey",
+   "people": 4
+  },
+  {
    "code": "KZ",
    "name": "Kazakhstan",
    "people": 4
@@ -143,18 +148,8 @@
    "people": 4
   },
   {
-   "code": "TR",
-   "name": "Turkey",
-   "people": 4
-  },
-  {
-   "code": "AE",
-   "name": "United Arab Emirates",
-   "people": 3
-  },
-  {
-   "code": "TH",
-   "name": "Thailand",
+   "code": "JP",
+   "name": "Japan",
    "people": 3
   },
   {
@@ -163,83 +158,23 @@
    "people": 3
   },
   {
+   "code": "TH",
+   "name": "Thailand",
+   "people": 3
+  },
+  {
+   "code": "AE",
+   "name": "United Arab Emirates",
+   "people": 3
+  },
+  {
    "code": "IL",
    "name": "Israel",
    "people": 3
   },
   {
-   "code": "JP",
-   "name": "Japan",
-   "people": 3
-  },
-  {
-   "code": "CY",
-   "name": "Cyprus",
-   "people": 2
-  },
-  {
-   "code": "TW",
-   "name": "Taiwan",
-   "people": 2
-  },
-  {
-   "code": "MW",
-   "name": "Malawi",
-   "people": 2
-  },
-  {
-   "code": "AR",
-   "name": "Argentina",
-   "people": 2
-  },
-  {
-   "code": "CZ",
-   "name": "Czechia",
-   "people": 2
-  },
-  {
-   "code": "ES",
-   "name": "Spain",
-   "people": 2
-  },
-  {
-   "code": "GR",
-   "name": "Greece",
-   "people": 2
-  },
-  {
-   "code": "DK",
-   "name": "Denmark",
-   "people": 2
-  },
-  {
-   "code": "NZ",
-   "name": "New Zealand",
-   "people": 2
-  },
-  {
-   "code": "MX",
-   "name": "Mexico",
-   "people": 2
-  },
-  {
    "code": "RS",
    "name": "Serbia",
-   "people": 2
-  },
-  {
-   "code": "PK",
-   "name": "Pakistan",
-   "people": 2
-  },
-  {
-   "code": "GE",
-   "name": "Georgia",
-   "people": 2
-  },
-  {
-   "code": "FI",
-   "name": "Finland",
    "people": 2
   },
   {
@@ -248,18 +183,73 @@
    "people": 2
   },
   {
-   "code": "UZ",
-   "name": "Uzbekistan",
-   "people": 1
+   "code": "FI",
+   "name": "Finland",
+   "people": 2
   },
   {
-   "code": "BG",
-   "name": "Bulgaria",
-   "people": 1
+   "code": "CY",
+   "name": "Cyprus",
+   "people": 2
   },
   {
-   "code": "MA",
-   "name": "Morocco",
+   "code": "ES",
+   "name": "Spain",
+   "people": 2
+  },
+  {
+   "code": "MW",
+   "name": "Malawi",
+   "people": 2
+  },
+  {
+   "code": "TW",
+   "name": "Taiwan",
+   "people": 2
+  },
+  {
+   "code": "MX",
+   "name": "Mexico",
+   "people": 2
+  },
+  {
+   "code": "NZ",
+   "name": "New Zealand",
+   "people": 2
+  },
+  {
+   "code": "DK",
+   "name": "Denmark",
+   "people": 2
+  },
+  {
+   "code": "GR",
+   "name": "Greece",
+   "people": 2
+  },
+  {
+   "code": "GE",
+   "name": "Georgia",
+   "people": 2
+  },
+  {
+   "code": "CZ",
+   "name": "Czechia",
+   "people": 2
+  },
+  {
+   "code": "AR",
+   "name": "Argentina",
+   "people": 2
+  },
+  {
+   "code": "PK",
+   "name": "Pakistan",
+   "people": 2
+  },
+  {
+   "code": "LT",
+   "name": "Lithuania",
    "people": 1
   },
   {
@@ -268,48 +258,8 @@
    "people": 1
   },
   {
-   "code": "CM",
-   "name": "Cameroon",
-   "people": 1
-  },
-  {
-   "code": "LV",
-   "name": "Latvia",
-   "people": 1
-  },
-  {
-   "code": "BD",
-   "name": "Bangladesh",
-   "people": 1
-  },
-  {
    "code": "IE",
    "name": "Ireland",
-   "people": 1
-  },
-  {
-   "code": "IR",
-   "name": "Iran",
-   "people": 1
-  },
-  {
-   "code": "BA",
-   "name": "Bosnia and Herzegovina",
-   "people": 1
-  },
-  {
-   "code": "AM",
-   "name": "Armenia",
-   "people": 1
-  },
-  {
-   "code": "LT",
-   "name": "Lithuania",
-   "people": 1
-  },
-  {
-   "code": "MR",
-   "name": "Mauritania",
    "people": 1
   },
   {
@@ -318,8 +268,58 @@
    "people": 1
   },
   {
+   "code": "MA",
+   "name": "Morocco",
+   "people": 1
+  },
+  {
+   "code": "BA",
+   "name": "Bosnia and Herzegovina",
+   "people": 1
+  },
+  {
+   "code": "UZ",
+   "name": "Uzbekistan",
+   "people": 1
+  },
+  {
+   "code": "AM",
+   "name": "Armenia",
+   "people": 1
+  },
+  {
    "code": "CO",
    "name": "Colombia",
+   "people": 1
+  },
+  {
+   "code": "LV",
+   "name": "Latvia",
+   "people": 1
+  },
+  {
+   "code": "IR",
+   "name": "Iran",
+   "people": 1
+  },
+  {
+   "code": "BD",
+   "name": "Bangladesh",
+   "people": 1
+  },
+  {
+   "code": "MR",
+   "name": "Mauritania",
+   "people": 1
+  },
+  {
+   "code": "CM",
+   "name": "Cameroon",
+   "people": 1
+  },
+  {
+   "code": "BG",
+   "name": "Bulgaria",
    "people": 1
   }
  ],
@@ -375,14 +375,14 @@
    "contributors": 0
   },
   {
-   "lat": 48.853,
-   "lon": 2.348,
-   "place": "Paris",
-   "country": "France",
-   "country_code": "FR",
-   "stargazers": 7,
+   "lat": 37.788,
+   "lon": -122.408,
+   "place": "San Francisco",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 8,
    "forkers": 1,
-   "contributors": 1
+   "contributors": 0
   },
   {
    "lat": 31.231,
@@ -405,14 +405,14 @@
    "contributors": 0
   },
   {
-   "lat": 37.788,
-   "lon": -122.408,
-   "place": "San Francisco",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 8,
+   "lat": 48.853,
+   "lon": 2.348,
+   "place": "Paris",
+   "country": "France",
+   "country_code": "FR",
+   "stargazers": 7,
    "forkers": 1,
-   "contributors": 0
+   "contributors": 1
   },
   {
    "lat": 51.507,
@@ -423,16 +423,6 @@
    "stargazers": 4,
    "forkers": 2,
    "contributors": 2
-  },
-  {
-   "lat": 61.067,
-   "lon": -107.992,
-   "place": "Canada",
-   "country": "Canada",
-   "country_code": "CA",
-   "stargazers": 7,
-   "forkers": 1,
-   "contributors": 0
   },
   {
    "lat": 48.208,
@@ -465,6 +455,16 @@
    "contributors": 1
   },
   {
+   "lat": 61.067,
+   "lon": -107.992,
+   "place": "Canada",
+   "country": "Canada",
+   "country_code": "CA",
+   "stargazers": 7,
+   "forkers": 1,
+   "contributors": 0
+  },
+  {
    "lat": 55.626,
    "lon": 37.606,
    "place": "Moscow",
@@ -473,26 +473,6 @@
    "stargazers": 5,
    "forkers": 1,
    "contributors": 1
-  },
-  {
-   "lat": 54.702,
-   "lon": -3.277,
-   "place": "United Kingdom",
-   "country": "United Kingdom",
-   "country_code": "GB",
-   "stargazers": 6,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 59.325,
-   "lon": 18.071,
-   "place": "Stockholm",
-   "country": "Sweden",
-   "country_code": "SE",
-   "stargazers": 6,
-   "forkers": 0,
-   "contributors": 0
   },
   {
    "lat": 48.137,
@@ -505,23 +485,13 @@
    "contributors": 0
   },
   {
-   "lat": 53.55,
-   "lon": 10.001,
-   "place": "Hamburg",
-   "country": "Germany",
-   "country_code": "DE",
+   "lat": 38.708,
+   "lon": -9.137,
+   "place": "Lisbon",
+   "country": "Portugal",
+   "country_code": "PT",
    "stargazers": 4,
-   "forkers": 1,
-   "contributors": 1
-  },
-  {
-   "lat": 39.906,
-   "lon": 116.391,
-   "place": "Beijing",
-   "country": "China",
-   "country_code": "CN",
-   "stargazers": 6,
-   "forkers": 0,
+   "forkers": 2,
    "contributors": 0
   },
   {
@@ -535,33 +505,43 @@
    "contributors": 1
   },
   {
-   "lat": 38.708,
-   "lon": -9.137,
-   "place": "Lisbon",
-   "country": "Portugal",
-   "country_code": "PT",
-   "stargazers": 4,
-   "forkers": 2,
+   "lat": 59.325,
+   "lon": 18.071,
+   "place": "Stockholm",
+   "country": "Sweden",
+   "country_code": "SE",
+   "stargazers": 6,
+   "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": -28.817,
-   "lon": 24.992,
-   "place": "South Africa",
-   "country": "South Africa",
-   "country_code": "ZA",
-   "stargazers": 3,
-   "forkers": 1,
-   "contributors": 1
+   "lat": 39.906,
+   "lon": 116.391,
+   "place": "Beijing",
+   "country": "China",
+   "country_code": "CN",
+   "stargazers": 6,
+   "forkers": 0,
+   "contributors": 0
   },
   {
-   "lat": 25.074,
-   "lon": 55.189,
-   "place": "Dubai",
-   "country": "United Arab Emirates",
-   "country_code": "AE",
-   "stargazers": 2,
-   "forkers": 2,
+   "lat": 54.702,
+   "lon": -3.277,
+   "place": "United Kingdom",
+   "country": "United Kingdom",
+   "country_code": "GB",
+   "stargazers": 6,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 53.55,
+   "lon": 10.001,
+   "place": "Hamburg",
+   "country": "Germany",
+   "country_code": "DE",
+   "stargazers": 4,
+   "forkers": 1,
    "contributors": 1
   },
   {
@@ -595,16 +575,6 @@
    "contributors": 0
   },
   {
-   "lat": 40.713,
-   "lon": -74.006,
-   "place": "New York",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 4,
-   "forkers": 1,
-   "contributors": 0
-  },
-  {
    "lat": 1.357,
    "lon": 103.819,
    "place": "Singapore",
@@ -615,6 +585,36 @@
    "contributors": 0
   },
   {
+   "lat": 40.713,
+   "lon": -74.006,
+   "place": "New York",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 4,
+   "forkers": 1,
+   "contributors": 0
+  },
+  {
+   "lat": 25.074,
+   "lon": 55.189,
+   "place": "Dubai",
+   "country": "United Arab Emirates",
+   "country_code": "AE",
+   "stargazers": 2,
+   "forkers": 2,
+   "contributors": 1
+  },
+  {
+   "lat": -28.817,
+   "lon": 24.992,
+   "place": "South Africa",
+   "country": "South Africa",
+   "country_code": "ZA",
+   "stargazers": 3,
+   "forkers": 1,
+   "contributors": 1
+  },
+  {
    "lat": 30.055,
    "lon": 107.875,
    "place": "Chongqing",
@@ -623,66 +623,6 @@
    "stargazers": 3,
    "forkers": 1,
    "contributors": 1
-  },
-  {
-   "lat": 42.359,
-   "lon": -71.058,
-   "place": "Boston",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 4,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 30.249,
-   "lon": 120.205,
-   "place": "Hangzhou City",
-   "country": "China",
-   "country_code": "CN",
-   "stargazers": 4,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": -24.776,
-   "lon": 134.755,
-   "place": "Australia",
-   "country": "Australia",
-   "country_code": "AU",
-   "stargazers": 4,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 34.541,
-   "lon": 108.924,
-   "place": "China",
-   "country": "China",
-   "country_code": "CN",
-   "stargazers": 4,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 47.594,
-   "lon": 14.125,
-   "place": "Austria",
-   "country": "Austria",
-   "country_code": "AT",
-   "stargazers": 2,
-   "forkers": 1,
-   "contributors": 1
-  },
-  {
-   "lat": 36.701,
-   "lon": -118.756,
-   "place": "California",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 4,
-   "forkers": 0,
-   "contributors": 0
   },
   {
    "lat": -33.87,
@@ -705,6 +645,36 @@
    "contributors": 1
   },
   {
+   "lat": -37.814,
+   "lon": 144.963,
+   "place": "Melbourne",
+   "country": "Australia",
+   "country_code": "AU",
+   "stargazers": 4,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 59.675,
+   "lon": 14.521,
+   "place": "Sweden",
+   "country": "Sweden",
+   "country_code": "SE",
+   "stargazers": 3,
+   "forkers": 1,
+   "contributors": 0
+  },
+  {
+   "lat": 42.359,
+   "lon": -71.058,
+   "place": "Boston",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 4,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
    "lat": 59.913,
    "lon": 10.739,
    "place": "Oslo",
@@ -715,9 +685,9 @@
    "contributors": 0
   },
   {
-   "lat": -37.814,
-   "lon": 144.963,
-   "place": "Melbourne",
+   "lat": -24.776,
+   "lon": 134.755,
+   "place": "Australia",
    "country": "Australia",
    "country_code": "AU",
    "stargazers": 4,
@@ -735,13 +705,13 @@
    "contributors": 0
   },
   {
-   "lat": 59.675,
-   "lon": 14.521,
-   "place": "Sweden",
-   "country": "Sweden",
-   "country_code": "SE",
-   "stargazers": 3,
-   "forkers": 1,
+   "lat": 36.701,
+   "lon": -118.756,
+   "place": "California",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 4,
+   "forkers": 0,
    "contributors": 0
   },
   {
@@ -755,32 +725,32 @@
    "contributors": 1
   },
   {
-   "lat": 24.48,
-   "lon": 118.085,
-   "place": "Xiamen",
+   "lat": 30.249,
+   "lon": 120.205,
+   "place": "Hangzhou City",
    "country": "China",
    "country_code": "CN",
-   "stargazers": 1,
+   "stargazers": 4,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 47.594,
+   "lon": 14.125,
+   "place": "Austria",
+   "country": "Austria",
+   "country_code": "AT",
+   "stargazers": 2,
    "forkers": 1,
    "contributors": 1
   },
   {
-   "lat": -23.551,
-   "lon": -46.633,
-   "place": "S\u00e3o Paulo",
-   "country": "Brazil",
-   "country_code": "BR",
-   "stargazers": 2,
-   "forkers": 1,
-   "contributors": 0
-  },
-  {
-   "lat": 61.153,
-   "lon": 8.788,
-   "place": "Norway",
-   "country": "Norway",
-   "country_code": "NO",
-   "stargazers": 3,
+   "lat": 34.541,
+   "lon": 108.924,
+   "place": "China",
+   "country": "China",
+   "country_code": "CN",
+   "stargazers": 4,
    "forkers": 0,
    "contributors": 0
   },
@@ -790,176 +760,6 @@
    "place": "India",
    "country": "India",
    "country_code": "IN",
-   "stargazers": 3,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 32.044,
-   "lon": 118.779,
-   "place": "Nanjing",
-   "country": "China",
-   "country_code": "CN",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 1
-  },
-  {
-   "lat": 51.5,
-   "lon": -0.192,
-   "place": "London",
-   "country": "United Kingdom",
-   "country_code": "GB",
-   "stargazers": 3,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 50.847,
-   "lon": 4.352,
-   "place": "Brussels",
-   "country": "Belgium",
-   "country_code": "BE",
-   "stargazers": 3,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 24.0,
-   "lon": 53.999,
-   "place": "United Arab Emirates",
-   "country": "United Arab Emirates",
-   "country_code": "AE",
-   "stargazers": 1,
-   "forkers": 1,
-   "contributors": 1
-  },
-  {
-   "lat": 44.977,
-   "lon": -93.265,
-   "place": "Minneapolis",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 3,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": -33.929,
-   "lon": 18.417,
-   "place": "Cape Town",
-   "country": "South Africa",
-   "country_code": "ZA",
-   "stargazers": 3,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 43.604,
-   "lon": 1.444,
-   "place": "Toulouse",
-   "country": "France",
-   "country_code": "FR",
-   "stargazers": 3,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 45.503,
-   "lon": -73.57,
-   "place": "Montreal",
-   "country": "Canada",
-   "country_code": "CA",
-   "stargazers": 3,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 45.758,
-   "lon": 4.832,
-   "place": "Lyon",
-   "country": "France",
-   "country_code": "FR",
-   "stargazers": 3,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 37.788,
-   "lon": -122.356,
-   "place": "San Francisco Bay Area",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 3,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 50.64,
-   "lon": 4.667,
-   "place": "Belgium",
-   "country": "Belgium",
-   "country_code": "BE",
-   "stargazers": 3,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 43.653,
-   "lon": -79.384,
-   "place": "Toronto",
-   "country": "Canada",
-   "country_code": "CA",
-   "stargazers": 3,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 32.085,
-   "lon": 34.782,
-   "place": "Tel-Aviv",
-   "country": "Israel",
-   "country_code": "IL",
-   "stargazers": 2,
-   "forkers": 1,
-   "contributors": 0
-  },
-  {
-   "lat": -10.333,
-   "lon": -53.2,
-   "place": "Brazil",
-   "country": "Brazil",
-   "country_code": "BR",
-   "stargazers": 3,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 49.76,
-   "lon": 6.644,
-   "place": "Trier",
-   "country": "Germany",
-   "country_code": "DE",
-   "stargazers": 1,
-   "forkers": 1,
-   "contributors": 1
-  },
-  {
-   "lat": 50.821,
-   "lon": -0.14,
-   "place": "Brighton",
-   "country": "United Kingdom",
-   "country_code": "GB",
-   "stargazers": 1,
-   "forkers": 1,
-   "contributors": 1
-  },
-  {
-   "lat": 49.454,
-   "lon": 11.077,
-   "place": "Nuremberg",
-   "country": "Germany",
-   "country_code": "DE",
    "stargazers": 3,
    "forkers": 0,
    "contributors": 0
@@ -975,6 +775,16 @@
    "contributors": 0
   },
   {
+   "lat": 45.758,
+   "lon": 4.832,
+   "place": "Lyon",
+   "country": "France",
+   "country_code": "FR",
+   "stargazers": 3,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
    "lat": 49.007,
    "lon": 8.403,
    "place": "Karlsruhe",
@@ -985,11 +795,171 @@
    "contributors": 0
   },
   {
+   "lat": 50.64,
+   "lon": 4.667,
+   "place": "Belgium",
+   "country": "Belgium",
+   "country_code": "BE",
+   "stargazers": 3,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 51.5,
+   "lon": -0.192,
+   "place": "London",
+   "country": "United Kingdom",
+   "country_code": "GB",
+   "stargazers": 3,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": -10.333,
+   "lon": -53.2,
+   "place": "Brazil",
+   "country": "Brazil",
+   "country_code": "BR",
+   "stargazers": 3,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 49.454,
+   "lon": 11.077,
+   "place": "Nuremberg",
+   "country": "Germany",
+   "country_code": "DE",
+   "stargazers": 3,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 61.153,
+   "lon": 8.788,
+   "place": "Norway",
+   "country": "Norway",
+   "country_code": "NO",
+   "stargazers": 3,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": -23.551,
+   "lon": -46.633,
+   "place": "S\u00e3o Paulo",
+   "country": "Brazil",
+   "country_code": "BR",
+   "stargazers": 2,
+   "forkers": 1,
+   "contributors": 0
+  },
+  {
+   "lat": 44.977,
+   "lon": -93.265,
+   "place": "Minneapolis",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 3,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 37.788,
+   "lon": -122.356,
+   "place": "San Francisco Bay Area",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 3,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 45.503,
+   "lon": -73.57,
+   "place": "Montreal",
+   "country": "Canada",
+   "country_code": "CA",
+   "stargazers": 3,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 43.604,
+   "lon": 1.444,
+   "place": "Toulouse",
+   "country": "France",
+   "country_code": "FR",
+   "stargazers": 3,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 43.653,
+   "lon": -79.384,
+   "place": "Toronto",
+   "country": "Canada",
+   "country_code": "CA",
+   "stargazers": 3,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 24.48,
+   "lon": 118.085,
+   "place": "Xiamen",
+   "country": "China",
+   "country_code": "CN",
+   "stargazers": 1,
+   "forkers": 1,
+   "contributors": 1
+  },
+  {
    "lat": 41.681,
    "lon": 44.029,
    "place": "Georgia",
    "country": "Georgia",
    "country_code": "GE",
+   "stargazers": 1,
+   "forkers": 1,
+   "contributors": 1
+  },
+  {
+   "lat": 32.085,
+   "lon": 34.782,
+   "place": "Tel-Aviv",
+   "country": "Israel",
+   "country_code": "IL",
+   "stargazers": 2,
+   "forkers": 1,
+   "contributors": 0
+  },
+  {
+   "lat": 32.044,
+   "lon": 118.779,
+   "place": "Nanjing",
+   "country": "China",
+   "country_code": "CN",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 1
+  },
+  {
+   "lat": 50.847,
+   "lon": 4.352,
+   "place": "Brussels",
+   "country": "Belgium",
+   "country_code": "BE",
+   "stargazers": 3,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 49.76,
+   "lon": 6.644,
+   "place": "Trier",
+   "country": "Germany",
+   "country_code": "DE",
    "stargazers": 1,
    "forkers": 1,
    "contributors": 1
@@ -1005,6 +975,36 @@
    "contributors": 1
   },
   {
+   "lat": -33.929,
+   "lon": 18.417,
+   "place": "Cape Town",
+   "country": "South Africa",
+   "country_code": "ZA",
+   "stargazers": 3,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 50.821,
+   "lon": -0.14,
+   "place": "Brighton",
+   "country": "United Kingdom",
+   "country_code": "GB",
+   "stargazers": 1,
+   "forkers": 1,
+   "contributors": 1
+  },
+  {
+   "lat": 24.0,
+   "lon": 53.999,
+   "place": "United Arab Emirates",
+   "country": "United Arab Emirates",
+   "country_code": "AE",
+   "stargazers": 1,
+   "forkers": 1,
+   "contributors": 1
+  },
+  {
    "lat": 48.102,
    "lon": -1.66,
    "place": "Rennes",
@@ -1015,51 +1015,11 @@
    "contributors": 1
   },
   {
-   "lat": 26.254,
-   "lon": 29.268,
-   "place": "Egypt",
-   "country": "Egypt",
-   "country_code": "EG",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 47.798,
-   "lon": 13.046,
-   "place": "Salzburg",
-   "country": "Austria",
-   "country_code": "AT",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 47.182,
-   "lon": 19.506,
-   "place": "Hungary",
-   "country": "Hungary",
-   "country_code": "HU",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 23.974,
-   "lon": 120.982,
-   "place": "Taiwan",
-   "country": "Taiwan",
-   "country_code": "TW",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": -13.988,
-   "lon": 33.768,
-   "place": "Lilongwe",
-   "country": "Malawi",
-   "country_code": "MW",
+   "lat": 50.735,
+   "lon": 7.102,
+   "place": "Bonn",
+   "country": "Germany",
+   "country_code": "DE",
    "stargazers": 2,
    "forkers": 0,
    "contributors": 0
@@ -1075,6 +1035,306 @@
    "contributors": 0
   },
   {
+   "lat": 41.006,
+   "lon": 28.976,
+   "place": "Istanbul",
+   "country": "Turkey",
+   "country_code": "TR",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 49.816,
+   "lon": 6.13,
+   "place": "Luxembourg",
+   "country": "Luxembourg",
+   "country_code": "LU",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 65.012,
+   "lon": 25.47,
+   "place": "Oulu",
+   "country": "Finland",
+   "country_code": "FI",
+   "stargazers": 1,
+   "forkers": 1,
+   "contributors": 0
+  },
+  {
+   "lat": 51.443,
+   "lon": -2.582,
+   "place": "Bristol",
+   "country": "United Kingdom",
+   "country_code": "GB",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 49.487,
+   "lon": 31.272,
+   "place": "Ukraine",
+   "country": "Ukraine",
+   "country_code": "UA",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 50.637,
+   "lon": 3.064,
+   "place": "Lille",
+   "country": "France",
+   "country_code": "FR",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": -13.988,
+   "lon": 33.768,
+   "place": "Lilongwe",
+   "country": "Malawi",
+   "country_code": "MW",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 45.056,
+   "lon": -92.808,
+   "place": "Stillwater",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 1,
+   "contributors": 0
+  },
+  {
+   "lat": 40.76,
+   "lon": -111.887,
+   "place": "Salt Lake City",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 50.062,
+   "lon": 19.937,
+   "place": "Krakow",
+   "country": "Poland",
+   "country_code": "PL",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 23.974,
+   "lon": 120.982,
+   "place": "Taiwan",
+   "country": "Taiwan",
+   "country_code": "TW",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 13.752,
+   "lon": 100.494,
+   "place": "Bangkok",
+   "country": "Thailand",
+   "country_code": "TH",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 47.246,
+   "lon": -122.438,
+   "place": "Tacoma",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 35.78,
+   "lon": -78.639,
+   "place": "Raleigh",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 50.001,
+   "lon": -86.001,
+   "place": "Ontario",
+   "country": "Canada",
+   "country_code": "CA",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": -27.469,
+   "lon": 153.024,
+   "place": "Brisbane",
+   "country": "Australia",
+   "country_code": "AU",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 55.67,
+   "lon": 10.333,
+   "place": "Denmark",
+   "country": "Denmark",
+   "country_code": "DK",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 43.236,
+   "lon": 76.946,
+   "place": "Almaty",
+   "country": "Kazakhstan",
+   "country_code": "KZ",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 41.893,
+   "lon": 12.483,
+   "place": "Rome",
+   "country": "Italy",
+   "country_code": "IT",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": -42.035,
+   "lon": 146.637,
+   "place": "Tasmania",
+   "country": "Australia",
+   "country_code": "AU",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 45.188,
+   "lon": 5.736,
+   "place": "Grenoble",
+   "country": "France",
+   "country_code": "FR",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 45.985,
+   "lon": 24.686,
+   "place": "Romania",
+   "country": "Romania",
+   "country_code": "RO",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 47.182,
+   "lon": 19.506,
+   "place": "Hungary",
+   "country": "Hungary",
+   "country_code": "HU",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 22.282,
+   "lon": 114.158,
+   "place": "Hong Kong",
+   "country": "China",
+   "country_code": "CN",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 15.927,
+   "lon": 107.965,
+   "place": "Vietnam",
+   "country": "Vietnam",
+   "country_code": "VN",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 39.38,
+   "lon": -77.278,
+   "place": "New Market",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 50.484,
+   "lon": 23.759,
+   "place": "\u017berniki",
+   "country": "Poland",
+   "country_code": "PL",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 51.341,
+   "lon": 12.375,
+   "place": "Leipzig",
+   "country": "Germany",
+   "country_code": "DE",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 32.716,
+   "lon": -117.164,
+   "place": "San Diego",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 26.254,
+   "lon": 29.268,
+   "place": "Egypt",
+   "country": "Egypt",
+   "country_code": "EG",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
    "lat": 30.044,
    "lon": 31.236,
    "place": "Cairo",
@@ -1083,16 +1343,6 @@
    "stargazers": 2,
    "forkers": 0,
    "contributors": 0
-  },
-  {
-   "lat": 53.219,
-   "lon": 6.568,
-   "place": "Groningen",
-   "country": "Netherlands",
-   "country_code": "NL",
-   "stargazers": 0,
-   "forkers": 1,
-   "contributors": 1
   },
   {
    "lat": 47.219,
@@ -1115,66 +1365,6 @@
    "contributors": 0
   },
   {
-   "lat": 50.776,
-   "lon": 6.084,
-   "place": "Aachen",
-   "country": "Germany",
-   "country_code": "DE",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 50.735,
-   "lon": 7.102,
-   "place": "Bonn",
-   "country": "Germany",
-   "country_code": "DE",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 22.282,
-   "lon": 114.158,
-   "place": "Hong Kong",
-   "country": "China",
-   "country_code": "CN",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 51.341,
-   "lon": 12.375,
-   "place": "Leipzig",
-   "country": "Germany",
-   "country_code": "DE",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 43.236,
-   "lon": 76.946,
-   "place": "Almaty",
-   "country": "Kazakhstan",
-   "country_code": "KZ",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 51.443,
-   "lon": -2.582,
-   "place": "Bristol",
-   "country": "United Kingdom",
-   "country_code": "GB",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
    "lat": 52.373,
    "lon": 4.892,
    "place": "Amsterdam",
@@ -1185,71 +1375,11 @@
    "contributors": 0
   },
   {
-   "lat": 15.927,
-   "lon": 107.965,
-   "place": "Vietnam",
-   "country": "Vietnam",
-   "country_code": "VN",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 45.056,
-   "lon": -92.808,
-   "place": "Stillwater",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 1,
-   "contributors": 0
-  },
-  {
-   "lat": 55.67,
-   "lon": 10.333,
-   "place": "Denmark",
-   "country": "Denmark",
-   "country_code": "DK",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 35.78,
-   "lon": -78.639,
-   "place": "Raleigh",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 49.487,
-   "lon": 31.272,
-   "place": "Ukraine",
-   "country": "Ukraine",
-   "country_code": "UA",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 41.006,
-   "lon": 28.976,
-   "place": "Istanbul",
-   "country": "Turkey",
-   "country_code": "TR",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 40.76,
-   "lon": -111.887,
-   "place": "Salt Lake City",
-   "country": "United States",
-   "country_code": "US",
+   "lat": 50.776,
+   "lon": 6.084,
+   "place": "Aachen",
+   "country": "Germany",
+   "country_code": "DE",
    "stargazers": 2,
    "forkers": 0,
    "contributors": 0
@@ -1265,51 +1395,11 @@
    "contributors": 0
   },
   {
-   "lat": -42.035,
-   "lon": 146.637,
-   "place": "Tasmania",
-   "country": "Australia",
-   "country_code": "AU",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": -27.469,
-   "lon": 153.024,
-   "place": "Brisbane",
-   "country": "Australia",
-   "country_code": "AU",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 41.506,
-   "lon": -90.516,
-   "place": "Moline",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 0,
-   "forkers": 1,
-   "contributors": 1
-  },
-  {
-   "lat": 50.062,
-   "lon": 19.937,
-   "place": "Krakow",
-   "country": "Poland",
-   "country_code": "PL",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 50.637,
-   "lon": 3.064,
-   "place": "Lille",
-   "country": "France",
-   "country_code": "FR",
+   "lat": 29.0,
+   "lon": 120.0,
+   "place": "Zhejiang",
+   "country": "China",
+   "country_code": "CN",
    "stargazers": 2,
    "forkers": 0,
    "contributors": 0
@@ -1325,131 +1415,611 @@
    "contributors": 0
   },
   {
-   "lat": 47.246,
-   "lon": -122.438,
-   "place": "Tacoma",
+   "lat": 47.798,
+   "lon": 13.046,
+   "place": "Salzburg",
+   "country": "Austria",
+   "country_code": "AT",
+   "stargazers": 2,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 53.219,
+   "lon": 6.568,
+   "place": "Groningen",
+   "country": "Netherlands",
+   "country_code": "NL",
+   "stargazers": 0,
+   "forkers": 1,
+   "contributors": 1
+  },
+  {
+   "lat": 41.506,
+   "lon": -90.516,
+   "place": "Moline",
    "country": "United States",
    "country_code": "US",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 41.893,
-   "lon": 12.483,
-   "place": "Rome",
-   "country": "Italy",
-   "country_code": "IT",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 45.985,
-   "lon": 24.686,
-   "place": "Romania",
-   "country": "Romania",
-   "country_code": "RO",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 65.012,
-   "lon": 25.47,
-   "place": "Oulu",
-   "country": "Finland",
-   "country_code": "FI",
-   "stargazers": 1,
+   "stargazers": 0,
    "forkers": 1,
+   "contributors": 1
+  },
+  {
+   "lat": 36.167,
+   "lon": -115.148,
+   "place": "Las Vegas",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 50.484,
-   "lon": 23.759,
-   "place": "\u017berniki",
+   "lat": 54.687,
+   "lon": 25.283,
+   "place": "Vilnius",
+   "country": "Lithuania",
+   "country_code": "LT",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 47.498,
+   "lon": 19.04,
+   "place": "Budapest",
+   "country": "Hungary",
+   "country_code": "HU",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 36.575,
+   "lon": 139.239,
+   "place": "Japan",
+   "country": "Japan",
+   "country_code": "JP",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 59.696,
+   "lon": 10.176,
+   "place": "Drammen",
+   "country": "Norway",
+   "country_code": "NO",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 47.482,
+   "lon": 8.209,
+   "place": "Brugg",
+   "country": "Switzerland",
+   "country_code": "CH",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 48.398,
+   "lon": 9.991,
+   "place": "Ulm",
+   "country": "Germany",
+   "country_code": "DE",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 46.522,
+   "lon": 6.633,
+   "place": "Lausanne",
+   "country": "Switzerland",
+   "country_code": "CH",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 19.146,
+   "lon": 72.823,
+   "place": "Mumbai",
+   "country": "India",
+   "country_code": "IN",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 51.449,
+   "lon": 5.45,
+   "place": "Eindhoven",
+   "country": "Netherlands",
+   "country_code": "NL",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 54.983,
+   "lon": 73.375,
+   "place": "Omsk",
+   "country": "Russia",
+   "country_code": "RU",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 53.43,
+   "lon": 14.593,
+   "place": "Szczecin",
    "country": "Poland",
    "country_code": "PL",
-   "stargazers": 2,
+   "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 50.001,
-   "lon": -86.001,
-   "place": "Ontario",
-   "country": "Canada",
-   "country_code": "CA",
-   "stargazers": 2,
+   "lat": 41.15,
+   "lon": -8.61,
+   "place": "Porto",
+   "country": "Portugal",
+   "country_code": "PT",
+   "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 29.0,
-   "lon": 120.0,
-   "place": "Zhejiang",
-   "country": "China",
-   "country_code": "CN",
-   "stargazers": 2,
+   "lat": 44.024,
+   "lon": 21.077,
+   "place": "Serbia",
+   "country": "Serbia",
+   "country_code": "RS",
+   "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 32.716,
-   "lon": -117.164,
-   "place": "San Diego",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 2,
+   "lat": 51.482,
+   "lon": 7.22,
+   "place": "Bochum",
+   "country": "Germany",
+   "country_code": "DE",
+   "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 39.38,
-   "lon": -77.278,
-   "place": "New Market",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 2,
+   "lat": 51.718,
+   "lon": 8.753,
+   "place": "Paderborn",
+   "country": "Germany",
+   "country_code": "DE",
+   "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 45.188,
-   "lon": 5.736,
-   "place": "Grenoble",
+   "lat": 40.836,
+   "lon": 14.249,
+   "place": "Naples",
+   "country": "Italy",
+   "country_code": "IT",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 34.685,
+   "lon": 33.033,
+   "place": "Limassol",
+   "country": "Cyprus",
+   "country_code": "CY",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 45.943,
+   "lon": 4.819,
+   "place": "Reyrieux",
    "country": "France",
    "country_code": "FR",
-   "stargazers": 2,
+   "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 49.816,
-   "lon": 6.13,
-   "place": "Luxembourg",
-   "country": "Luxembourg",
-   "country_code": "LU",
-   "stargazers": 2,
+   "lat": 57.817,
+   "lon": 28.334,
+   "place": "Pskov",
+   "country": "Russia",
+   "country_code": "RU",
+   "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 13.752,
-   "lon": 100.494,
-   "place": "Bangkok",
-   "country": "Thailand",
-   "country_code": "TH",
-   "stargazers": 2,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 43.048,
-   "lon": -76.147,
-   "place": "City of Syracuse",
+   "lat": 40.751,
+   "lon": -73.969,
+   "place": "New York",
    "country": "United States",
    "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 51.264,
+   "lon": 7.178,
+   "place": "Wuppertal",
+   "country": "Germany",
+   "country_code": "DE",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 22.573,
+   "lon": 88.364,
+   "place": "Kolkata",
+   "country": "India",
+   "country_code": "IN",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 40.417,
+   "lon": -3.704,
+   "place": "Madrid",
+   "country": "Spain",
+   "country_code": "ES",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 41.849,
+   "lon": -70.775,
+   "place": "Carver",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 30.438,
+   "lon": -84.281,
+   "place": "Tallahassee",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 46.12,
+   "lon": 14.815,
+   "place": "Slovenia",
+   "country": "Slovenia",
+   "country_code": "SI",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 45.587,
+   "lon": -122.593,
+   "place": "Portland",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 19.055,
+   "lon": 72.869,
+   "place": "Mumbai",
+   "country": "India",
+   "country_code": "IN",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 34.054,
+   "lon": -117.261,
+   "place": "Loma Linda",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 35.673,
+   "lon": -79.039,
+   "place": "North Carolina",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 51.207,
+   "lon": 0.721,
+   "place": "Kent",
+   "country": "United Kingdom",
+   "country_code": "GB",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 51.358,
+   "lon": -0.299,
+   "place": "Chessington",
+   "country": "United Kingdom",
+   "country_code": "GB",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 51.681,
+   "lon": 7.819,
+   "place": "Hamm",
+   "country": "Germany",
+   "country_code": "DE",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 40.772,
+   "lon": -73.984,
+   "place": "New York",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 54.57,
+   "lon": 18.393,
+   "place": "Rumia",
+   "country": "Poland",
+   "country_code": "PL",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 40.587,
+   "lon": -105.077,
+   "place": "Fort Collins",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 30.674,
+   "lon": -96.37,
+   "place": "Bryan",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 52.865,
+   "lon": -7.979,
+   "place": "Ireland",
+   "country": "Ireland",
+   "country_code": "IE",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 32.563,
+   "lon": -97.142,
+   "place": "Mansfield",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 33.686,
+   "lon": -117.826,
+   "place": "Irvine",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 44.523,
+   "lon": -89.584,
+   "place": "Stevens Point",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 42.482,
+   "lon": -83.083,
+   "place": "Warren",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 38.581,
+   "lon": -121.494,
+   "place": "Sacramento",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 42.776,
+   "lon": 19.202,
+   "place": "Montenegro",
+   "country": "Montenegro",
+   "country_code": "ME",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 47.614,
+   "lon": -122.192,
+   "place": "Bellevue",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 39.662,
+   "lon": -8.135,
+   "place": "Portugal",
+   "country": "Portugal",
+   "country_code": "PT",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 39.294,
+   "lon": 35.232,
+   "place": "Turkey",
+   "country": "Turkey",
+   "country_code": "TR",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 25.68,
+   "lon": -100.315,
+   "place": "Monterrey",
+   "country": "Mexico",
+   "country_code": "MX",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": -15.794,
+   "lon": -47.883,
+   "place": "Bras\u00edlia",
+   "country": "Brazil",
+   "country_code": "BR",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 31.173,
+   "lon": -7.336,
+   "place": "Morocco",
+   "country": "Morocco",
+   "country_code": "MA",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 42.315,
+   "lon": 69.588,
+   "place": "Shymkent",
+   "country": "Kazakhstan",
+   "country_code": "KZ",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 46.202,
+   "lon": 6.147,
+   "place": "Geneva",
+   "country": "Switzerland",
+   "country_code": "CH",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 36.156,
+   "lon": -95.993,
+   "place": "Tulsa",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": -44.003,
+   "lon": 170.478,
+   "place": "Earth",
+   "country": "New Zealand",
+   "country_code": "NZ",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 46.103,
+   "lon": 11.13,
+   "place": "Provincia di Trento",
+   "country": "Italy",
+   "country_code": "IT",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 47.153,
+   "lon": 0.653,
+   "place": "Le Pr\u00e9 des D\u00e9pends",
+   "country": "France",
+   "country_code": "FR",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 51.752,
+   "lon": -1.258,
+   "place": "Oxford",
+   "country": "United Kingdom",
+   "country_code": "GB",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
@@ -1465,23 +2035,93 @@
    "contributors": 0
   },
   {
-   "lat": 42.765,
-   "lon": 59.598,
-   "place": "Kegeyli",
-   "country": "Uzbekistan",
-   "country_code": "UZ",
+   "lat": 27.771,
+   "lon": -82.634,
+   "place": "Saint Petersburg",
+   "country": "United States",
+   "country_code": "US",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 34.982,
-   "lon": 33.145,
-   "place": "Cyprus",
-   "country": "Cyprus",
-   "country_code": "CY",
-   "stargazers": 0,
-   "forkers": 1,
+   "lat": 40.739,
+   "lon": -73.975,
+   "place": "New York",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 22.816,
+   "lon": 108.318,
+   "place": "Nanning",
+   "country": "China",
+   "country_code": "CN",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 41.838,
+   "lon": -72.466,
+   "place": "Vernon",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 47.727,
+   "lon": 10.317,
+   "place": "Kempten (Allg\u00e4u)",
+   "country": "Germany",
+   "country_code": "DE",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 51.779,
+   "lon": -4.805,
+   "place": "Neverland",
+   "country": "United Kingdom",
+   "country_code": "GB",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 30.812,
+   "lon": 34.859,
+   "place": "Israel",
+   "country": "Israel",
+   "country_code": "IL",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 40.64,
+   "lon": 22.935,
+   "place": "Thessaloniki",
+   "country": "Greece",
+   "country_code": "GR",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 52.421,
+   "lon": 10.786,
+   "place": "Wolfsburg",
+   "country": "Germany",
+   "country_code": "DE",
+   "stargazers": 1,
+   "forkers": 0,
    "contributors": 0
   },
   {
@@ -1495,19 +2135,9 @@
    "contributors": 0
   },
   {
-   "lat": 37.42,
-   "lon": 127.126,
-   "place": "Seongnam-si",
-   "country": "South Korea",
-   "country_code": "KR",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 32.756,
-   "lon": -117.069,
-   "place": "San Diego",
+   "lat": 40.298,
+   "lon": -111.694,
+   "place": "Orem",
    "country": "United States",
    "country_code": "US",
    "stargazers": 1,
@@ -1515,21 +2145,41 @@
    "contributors": 0
   },
   {
-   "lat": 42.678,
-   "lon": -74.485,
-   "place": "Village of Cobleskill",
-   "country": "United States",
-   "country_code": "US",
+   "lat": 52.198,
+   "lon": 0.139,
+   "place": "Cambridge",
+   "country": "United Kingdom",
+   "country_code": "GB",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 14.897,
-   "lon": 100.833,
-   "place": "Thailand",
-   "country": "Thailand",
-   "country_code": "TH",
+   "lat": 61.669,
+   "lon": 50.835,
+   "place": "Syktyvkar",
+   "country": "Russia",
+   "country_code": "RU",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 31.311,
+   "lon": 120.621,
+   "place": "Suzhou City",
+   "country": "China",
+   "country_code": "CN",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 39.423,
+   "lon": -111.714,
+   "place": "Utah",
+   "country": "United States",
+   "country_code": "US",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
@@ -1555,211 +2205,11 @@
    "contributors": 0
   },
   {
-   "lat": 38.256,
-   "lon": -85.758,
-   "place": "Louisville",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 36.638,
-   "lon": 127.696,
-   "place": "South Korea",
-   "country": "South Korea",
-   "country_code": "KR",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 47.498,
-   "lon": 19.04,
-   "place": "Budapest",
-   "country": "Hungary",
-   "country_code": "HU",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 39.101,
-   "lon": -84.513,
-   "place": "Cincinnati",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 51.264,
-   "lon": 7.178,
-   "place": "Wuppertal",
-   "country": "Germany",
-   "country_code": "DE",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 40.298,
-   "lon": -111.694,
-   "place": "Orem",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": -34.61,
-   "lon": -58.389,
-   "place": "Buenos Aires",
-   "country": "Argentina",
-   "country_code": "AR",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 51.846,
-   "lon": 5.871,
-   "place": "Nijmegen",
-   "country": "Netherlands",
-   "country_code": "NL",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 39.423,
-   "lon": -111.714,
-   "place": "Utah",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 39.643,
-   "lon": -84.287,
-   "place": "Miamisburg",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 52.199,
-   "lon": 8.714,
-   "place": "L\u00f6hne",
-   "country": "Germany",
-   "country_code": "DE",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 42.698,
-   "lon": 23.322,
-   "place": "Sofia",
-   "country": "Bulgaria",
-   "country_code": "BG",
-   "stargazers": 0,
-   "forkers": 1,
-   "contributors": 0
-  },
-  {
-   "lat": 33.0,
-   "lon": 120.0,
-   "place": "Jiangsu",
-   "country": "China",
-   "country_code": "CN",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 48.449,
-   "lon": 10.221,
-   "place": "Leipheim",
-   "country": "Germany",
-   "country_code": "DE",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 48.573,
-   "lon": 7.811,
-   "place": "Kehl",
-   "country": "Germany",
-   "country_code": "DE",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 51.221,
-   "lon": 4.4,
-   "place": "Antwerp",
-   "country": "Belgium",
-   "country_code": "BE",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 46.202,
-   "lon": 6.147,
-   "place": "Geneva",
-   "country": "Switzerland",
-   "country_code": "CH",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 37.323,
-   "lon": -122.032,
-   "place": "Cupertino",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 43.157,
-   "lon": -77.615,
-   "place": "Rochester",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 0,
-   "forkers": 0,
-   "contributors": 1
-  },
-  {
-   "lat": 50.286,
-   "lon": 5.482,
-   "place": "Hotton",
-   "country": "Belgium",
-   "country_code": "BE",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 35.473,
-   "lon": -97.517,
-   "place": "Oklahoma City",
-   "country": "United States",
-   "country_code": "US",
+   "lat": 52.667,
+   "lon": 1.0,
+   "place": "Norfolk",
+   "country": "United Kingdom",
+   "country_code": "GB",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
@@ -1775,99 +2225,19 @@
    "contributors": 0
   },
   {
-   "lat": 34.054,
-   "lon": -117.261,
-   "place": "Loma Linda",
-   "country": "United States",
-   "country_code": "US",
+   "lat": 42.638,
+   "lon": 12.674,
+   "place": "Italy",
+   "country": "Italy",
+   "country_code": "IT",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 50.087,
-   "lon": 14.421,
-   "place": "Prague",
-   "country": "Czechia",
-   "country_code": "CZ",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 59.933,
-   "lon": 30.347,
-   "place": "Saint Petersburg",
-   "country": "Russia",
-   "country_code": "RU",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 51.752,
-   "lon": -1.258,
-   "place": "Oxford",
-   "country": "United Kingdom",
-   "country_code": "GB",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 43.353,
-   "lon": -5.88,
-   "place": "Oviedo",
-   "country": "Spain",
-   "country_code": "ES",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 43.683,
-   "lon": -79.327,
-   "place": "Toronto",
-   "country": "Canada",
-   "country_code": "CA",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 40.772,
-   "lon": -73.984,
-   "place": "New York",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 19.055,
-   "lon": 72.869,
-   "place": "Mumbai",
-   "country": "India",
-   "country_code": "IN",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 45.587,
-   "lon": -122.593,
-   "place": "Portland",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 22.816,
-   "lon": 108.318,
-   "place": "Nanning",
+   "lat": 30.66,
+   "lon": 104.063,
+   "place": "Chengdu",
    "country": "China",
    "country_code": "CN",
    "stargazers": 1,
@@ -1885,51 +2255,211 @@
    "contributors": 0
   },
   {
-   "lat": 40.64,
-   "lon": 22.935,
-   "place": "Thessaloniki",
-   "country": "Greece",
-   "country_code": "GR",
+   "lat": 51.688,
+   "lon": 6.143,
+   "place": "eXcited",
+   "country": "Germany",
+   "country_code": "DE",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 31.173,
-   "lon": -7.336,
-   "place": "Morocco",
-   "country": "Morocco",
-   "country_code": "MA",
+   "lat": 43.77,
+   "lon": 11.256,
+   "place": "Florence",
+   "country": "Italy",
+   "country_code": "IT",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": -26.49,
-   "lon": -49.078,
-   "place": "Jaragu\u00e1 do Sul",
-   "country": "Brazil",
-   "country_code": "BR",
+   "lat": 51.514,
+   "lon": 7.465,
+   "place": "Dortmund",
+   "country": "Germany",
+   "country_code": "DE",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 46.12,
-   "lon": 14.815,
-   "place": "Slovenia",
-   "country": "Slovenia",
-   "country_code": "SI",
+   "lat": 51.128,
+   "lon": 71.43,
+   "place": "Astana",
+   "country": "Kazakhstan",
+   "country_code": "KZ",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 40.417,
-   "lon": -3.704,
-   "place": "Madrid",
+   "lat": 13.08,
+   "lon": 80.281,
+   "place": "Chennai",
+   "country": "India",
+   "country_code": "IN",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 43.344,
+   "lon": 17.808,
+   "place": "Local community Centar II",
+   "country": "Bosnia and Herzegovina",
+   "country_code": "BA",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 44.815,
+   "lon": 20.446,
+   "place": "Belgrade",
+   "country": "Serbia",
+   "country_code": "RS",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 55.861,
+   "lon": -4.25,
+   "place": "Glasgow",
+   "country": "United Kingdom",
+   "country_code": "GB",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 42.765,
+   "lon": 59.598,
+   "place": "Kegeyli",
+   "country": "Uzbekistan",
+   "country_code": "UZ",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 43.353,
+   "lon": -5.88,
+   "place": "Oviedo",
    "country": "Spain",
    "country_code": "ES",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 50.049,
+   "lon": 1.418,
+   "place": "Eu",
+   "country": "France",
+   "country_code": "FR",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 44.95,
+   "lon": -93.093,
+   "place": "Saint Paul",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 59.961,
+   "lon": 30.159,
+   "place": "Saint Petersburg",
+   "country": "Russia",
+   "country_code": "RU",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 59.933,
+   "lon": 30.347,
+   "place": "Saint Petersburg",
+   "country": "Russia",
+   "country_code": "RU",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 50.082,
+   "lon": 8.242,
+   "place": "Wiesbaden",
+   "country": "Germany",
+   "country_code": "DE",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 52.075,
+   "lon": 4.27,
+   "place": "The Hague",
+   "country": "Netherlands",
+   "country_code": "NL",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 53.442,
+   "lon": -2.232,
+   "place": "Manchester",
+   "country": "United Kingdom",
+   "country_code": "GB",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 19.321,
+   "lon": -99.151,
+   "place": "Mexico City",
+   "country": "Mexico",
+   "country_code": "MX",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 41.381,
+   "lon": -74.313,
+   "place": "East Coast",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 41.876,
+   "lon": -87.624,
+   "place": "Chicago",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 37.323,
+   "lon": -122.032,
+   "place": "Cupertino",
+   "country": "United States",
+   "country_code": "US",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
@@ -1945,49 +2475,9 @@
    "contributors": 0
   },
   {
-   "lat": 59.696,
-   "lon": 10.176,
-   "place": "Drammen",
-   "country": "Norway",
-   "country_code": "NO",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 51.207,
-   "lon": 0.721,
-   "place": "Kent",
-   "country": "United Kingdom",
-   "country_code": "GB",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 30.812,
-   "lon": 34.859,
-   "place": "Israel",
-   "country": "Israel",
-   "country_code": "IL",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 53.546,
-   "lon": -113.491,
-   "place": "Edmonton",
-   "country": "Canada",
-   "country_code": "CA",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 41.849,
-   "lon": -70.775,
-   "place": "Carver",
+   "lat": 33.388,
+   "lon": -96.402,
+   "place": "Desert",
    "country": "United States",
    "country_code": "US",
    "stargazers": 1,
@@ -1995,49 +2485,49 @@
    "contributors": 0
   },
   {
-   "lat": 42.315,
-   "lon": 69.588,
-   "place": "Shymkent",
-   "country": "Kazakhstan",
-   "country_code": "KZ",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 33.754,
-   "lon": -84.39,
-   "place": "Atlanta",
+   "lat": 35.205,
+   "lon": -92.448,
+   "place": "Arkansas",
    "country": "United States",
    "country_code": "US",
-   "stargazers": 0,
-   "forkers": 0,
-   "contributors": 1
-  },
-  {
-   "lat": 36.575,
-   "lon": 139.239,
-   "place": "Japan",
-   "country": "Japan",
-   "country_code": "JP",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 49.744,
-   "lon": 15.338,
-   "place": "Czechia",
-   "country": "Czechia",
-   "country_code": "CZ",
+   "lat": 37.123,
+   "lon": -78.493,
+   "place": "Virginia",
+   "country": "United States",
+   "country_code": "US",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 38.581,
-   "lon": -121.494,
-   "place": "Sacramento",
+   "lat": 33.742,
+   "lon": -84.597,
+   "place": "Atlanta, GA",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 40.178,
+   "lon": 44.513,
+   "place": "Yerevan",
+   "country": "Armenia",
+   "country_code": "AM",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 42.379,
+   "lon": -72.032,
+   "place": "Massachusetts",
    "country": "United States",
    "country_code": "US",
    "stargazers": 1,
@@ -2055,211 +2545,11 @@
    "contributors": 0
   },
   {
-   "lat": 41.033,
-   "lon": 14.298,
-   "place": "Marcianise",
-   "country": "Italy",
-   "country_code": "IT",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 46.103,
-   "lon": 11.13,
-   "place": "Provincia di Trento",
-   "country": "Italy",
-   "country_code": "IT",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 4.016,
-   "lon": 9.148,
-   "place": "Glocal Gaz",
-   "country": "Cameroon",
-   "country_code": "CM",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 36.167,
-   "lon": -115.148,
-   "place": "Las Vegas",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": -44.003,
-   "lon": 170.478,
-   "place": "Earth",
-   "country": "New Zealand",
-   "country_code": "NZ",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 34.181,
-   "lon": -118.307,
-   "place": "Burbank",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 0,
-   "forkers": 1,
-   "contributors": 0
-  },
-  {
-   "lat": 56.841,
-   "lon": 24.754,
-   "place": "Latvia",
-   "country": "Latvia",
-   "country_code": "LV",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 33.388,
-   "lon": -96.402,
-   "place": "Desert",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 19.146,
-   "lon": 72.823,
-   "place": "Mumbai",
-   "country": "India",
-   "country_code": "IN",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 52.075,
-   "lon": 4.27,
-   "place": "The Hague",
-   "country": "Netherlands",
-   "country_code": "NL",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 27.771,
-   "lon": -82.634,
-   "place": "Saint Petersburg",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 38.995,
-   "lon": 21.988,
-   "place": "Greece",
-   "country": "Greece",
-   "country_code": "GR",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 43.485,
-   "lon": -71.655,
-   "place": "New Hampshire",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 41.15,
-   "lon": -8.61,
-   "place": "Porto",
-   "country": "Portugal",
-   "country_code": "PT",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 47.153,
-   "lon": 0.653,
-   "place": "Le Pr\u00e9 des D\u00e9pends",
-   "country": "France",
-   "country_code": "FR",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 52.421,
-   "lon": 10.786,
-   "place": "Wolfsburg",
-   "country": "Germany",
-   "country_code": "DE",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 34.054,
-   "lon": -118.243,
-   "place": "Los Angeles",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": -15.794,
-   "lon": -47.883,
-   "place": "Bras\u00edlia",
-   "country": "Brazil",
-   "country_code": "BR",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 48.398,
-   "lon": 9.991,
-   "place": "Ulm",
-   "country": "Germany",
-   "country_code": "DE",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 40.751,
-   "lon": -73.969,
-   "place": "New York",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 52.091,
-   "lon": 5.122,
-   "place": "Utrecht",
-   "country": "Netherlands",
-   "country_code": "NL",
+   "lat": 35.87,
+   "lon": 128.693,
+   "place": "Daegu",
+   "country": "South Korea",
+   "country_code": "KR",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
@@ -2275,31 +2565,41 @@
    "contributors": 0
   },
   {
-   "lat": 19.321,
-   "lon": -99.151,
-   "place": "Mexico City",
-   "country": "Mexico",
-   "country_code": "MX",
+   "lat": -36.987,
+   "lon": 147.507,
+   "place": "Graveyard",
+   "country": "Australia",
+   "country_code": "AU",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 40.836,
-   "lon": 14.249,
-   "place": "Naples",
-   "country": "Italy",
-   "country_code": "IT",
+   "lat": -37.788,
+   "lon": 175.282,
+   "place": "Hamilton City",
+   "country": "New Zealand",
+   "country_code": "NZ",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 48.859,
-   "lon": 2.32,
-   "place": "Paris",
+   "lat": 44.841,
+   "lon": -0.58,
+   "place": "Bordeaux",
    "country": "France",
    "country_code": "FR",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 50.087,
+   "lon": 14.421,
+   "place": "Prague",
+   "country": "Czechia",
+   "country_code": "CZ",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
@@ -2315,11 +2615,61 @@
    "contributors": 0
   },
   {
+   "lat": 50.286,
+   "lon": 5.482,
+   "place": "Hotton",
+   "country": "Belgium",
+   "country_code": "BE",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 41.033,
+   "lon": 14.298,
+   "place": "Marcianise",
+   "country": "Italy",
+   "country_code": "IT",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 45.068,
+   "lon": 7.682,
+   "place": "Turin",
+   "country": "Italy",
+   "country_code": "IT",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
    "lat": 37.651,
    "lon": 126.585,
    "place": "ASIA",
    "country": "South Korea",
    "country_code": "KR",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 48.859,
+   "lon": 2.32,
+   "place": "Paris",
+   "country": "France",
+   "country_code": "FR",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 25.774,
+   "lon": -80.194,
+   "place": "Miami",
+   "country": "United States",
+   "country_code": "US",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
@@ -2345,11 +2695,171 @@
    "contributors": 0
   },
   {
-   "lat": 47.727,
-   "lon": 10.317,
-   "place": "Kempten (Allg\u00e4u)",
+   "lat": 48.573,
+   "lon": 7.811,
+   "place": "Kehl",
    "country": "Germany",
    "country_code": "DE",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 39.101,
+   "lon": -84.513,
+   "place": "Cincinnati",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 14.897,
+   "lon": 100.833,
+   "place": "Thailand",
+   "country": "Thailand",
+   "country_code": "TH",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 54.783,
+   "lon": 9.433,
+   "place": "Flensburg",
+   "country": "Germany",
+   "country_code": "DE",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 52.199,
+   "lon": 8.714,
+   "place": "L\u00f6hne",
+   "country": "Germany",
+   "country_code": "DE",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 33.0,
+   "lon": 120.0,
+   "place": "Jiangsu",
+   "country": "China",
+   "country_code": "CN",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": -26.49,
+   "lon": -49.078,
+   "place": "Jaragu\u00e1 do Sul",
+   "country": "Brazil",
+   "country_code": "BR",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 37.42,
+   "lon": 127.126,
+   "place": "Seongnam-si",
+   "country": "South Korea",
+   "country_code": "KR",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 39.643,
+   "lon": -84.287,
+   "place": "Miamisburg",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 32.756,
+   "lon": -117.069,
+   "place": "San Diego",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 43.048,
+   "lon": -76.147,
+   "place": "City of Syracuse",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 54.523,
+   "lon": 18.604,
+   "place": "Gdynia",
+   "country": "Poland",
+   "country_code": "PL",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 51.221,
+   "lon": 4.4,
+   "place": "Antwerp",
+   "country": "Belgium",
+   "country_code": "BE",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 43.485,
+   "lon": -71.655,
+   "place": "New Hampshire",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": -34.61,
+   "lon": -58.389,
+   "place": "Buenos Aires",
+   "country": "Argentina",
+   "country_code": "AR",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 53.546,
+   "lon": -113.491,
+   "place": "Edmonton",
+   "country": "Canada",
+   "country_code": "CA",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 30.331,
+   "lon": 71.247,
+   "place": "Pakistan",
+   "country": "Pakistan",
+   "country_code": "PK",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
@@ -2365,19 +2875,79 @@
    "contributors": 0
   },
   {
-   "lat": 23.751,
-   "lon": 89.64,
-   "place": "Barbakpur",
-   "country": "Bangladesh",
-   "country_code": "BD",
+   "lat": 51.846,
+   "lon": 5.871,
+   "place": "Nijmegen",
+   "country": "Netherlands",
+   "country_code": "NL",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 47.482,
-   "lon": 8.209,
-   "place": "Brugg",
+   "lat": 49.489,
+   "lon": 8.467,
+   "place": "Mannheim",
+   "country": "Germany",
+   "country_code": "DE",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 4.653,
+   "lon": -74.084,
+   "place": "Bogota",
+   "country": "Colombia",
+   "country_code": "CO",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 30.579,
+   "lon": 114.292,
+   "place": "Wuhan",
+   "country": "China",
+   "country_code": "CN",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 29.872,
+   "lon": 121.55,
+   "place": "Ningbo",
+   "country": "China",
+   "country_code": "CN",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 43.683,
+   "lon": -79.327,
+   "place": "Toronto",
+   "country": "Canada",
+   "country_code": "CA",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 17.361,
+   "lon": 78.474,
+   "place": "Hyderabad",
+   "country": "India",
+   "country_code": "IN",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 47.423,
+   "lon": 8.567,
+   "place": "Glattpark",
    "country": "Switzerland",
    "country_code": "CH",
    "stargazers": 1,
@@ -2385,99 +2955,29 @@
    "contributors": 0
   },
   {
-   "lat": 39.662,
-   "lon": -8.135,
-   "place": "Portugal",
-   "country": "Portugal",
-   "country_code": "PT",
+   "lat": 47.071,
+   "lon": 15.438,
+   "place": "Graz",
+   "country": "Austria",
+   "country_code": "AT",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 39.921,
-   "lon": 32.854,
-   "place": "Ankara",
-   "country": "Turkey",
-   "country_code": "TR",
+   "lat": 20.046,
+   "lon": 110.196,
+   "place": "Haikou City",
+   "country": "China",
+   "country_code": "CN",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 45.068,
-   "lon": 7.682,
-   "place": "Turin",
-   "country": "Italy",
-   "country_code": "IT",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 44.024,
-   "lon": 21.077,
-   "place": "Serbia",
-   "country": "Serbia",
-   "country_code": "RS",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 46.522,
-   "lon": 6.633,
-   "place": "Lausanne",
-   "country": "Switzerland",
-   "country_code": "CH",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 53.442,
-   "lon": -2.232,
-   "place": "Manchester",
-   "country": "United Kingdom",
-   "country_code": "GB",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 44.523,
-   "lon": -89.584,
-   "place": "Stevens Point",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 47.614,
-   "lon": -122.192,
-   "place": "Bellevue",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 32.563,
-   "lon": -97.142,
-   "place": "Mansfield",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 41.876,
-   "lon": -87.624,
-   "place": "Chicago",
+   "lat": 38.256,
+   "lon": -85.758,
+   "place": "Louisville",
    "country": "United States",
    "country_code": "US",
    "stargazers": 1,
@@ -2495,439 +2995,9 @@
    "contributors": 0
   },
   {
-   "lat": 36.156,
-   "lon": -95.993,
-   "place": "Tulsa",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 42.379,
-   "lon": -72.032,
-   "place": "Massachusetts",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 25.68,
-   "lon": -100.315,
-   "place": "Monterrey",
-   "country": "Mexico",
-   "country_code": "MX",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 35.205,
-   "lon": -92.448,
-   "place": "Arkansas",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 30.331,
-   "lon": 71.247,
-   "place": "Pakistan",
-   "country": "Pakistan",
-   "country_code": "PK",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 50.049,
-   "lon": 1.418,
-   "place": "Eu",
-   "country": "France",
-   "country_code": "FR",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 57.817,
-   "lon": 28.334,
-   "place": "Pskov",
-   "country": "Russia",
-   "country_code": "RU",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 48.88,
-   "lon": 2.327,
-   "place": "Li\u00e8ge",
-   "country": "France",
-   "country_code": "FR",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 53.8,
-   "lon": -1.745,
-   "place": "Bradford",
-   "country": "United Kingdom",
-   "country_code": "GB",
-   "stargazers": 0,
-   "forkers": 1,
-   "contributors": 0
-  },
-  {
-   "lat": 51.482,
-   "lon": 7.22,
-   "place": "Bochum",
-   "country": "Germany",
-   "country_code": "DE",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 52.865,
-   "lon": -7.979,
-   "place": "Ireland",
-   "country": "Ireland",
-   "country_code": "IE",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 51.128,
-   "lon": 71.43,
-   "place": "Astana",
-   "country": "Kazakhstan",
-   "country_code": "KZ",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 45.421,
-   "lon": -75.69,
-   "place": "Ottawa",
-   "country": "Canada",
-   "country_code": "CA",
-   "stargazers": 0,
-   "forkers": 0,
-   "contributors": 1
-  },
-  {
-   "lat": 20.046,
-   "lon": 110.196,
-   "place": "Haikou City",
-   "country": "China",
-   "country_code": "CN",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 31.311,
-   "lon": 120.621,
-   "place": "Suzhou City",
-   "country": "China",
-   "country_code": "CN",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 47.423,
-   "lon": 8.567,
-   "place": "Glattpark",
-   "country": "Switzerland",
-   "country_code": "CH",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 42.638,
-   "lon": 12.674,
-   "place": "Italy",
-   "country": "Italy",
-   "country_code": "IT",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 44.841,
-   "lon": -0.58,
-   "place": "Bordeaux",
-   "country": "France",
-   "country_code": "FR",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 32.648,
-   "lon": 54.564,
-   "place": "Iran",
-   "country": "Iran",
-   "country_code": "IR",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 51.449,
-   "lon": 5.45,
-   "place": "Eindhoven",
-   "country": "Netherlands",
-   "country_code": "NL",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 43.77,
-   "lon": 11.256,
-   "place": "Florence",
-   "country": "Italy",
-   "country_code": "IT",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 43.344,
-   "lon": 17.808,
-   "place": "Local community Centar II",
-   "country": "Bosnia and Herzegovina",
-   "country_code": "BA",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 35.87,
-   "lon": 128.693,
-   "place": "Daegu",
-   "country": "South Korea",
-   "country_code": "KR",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 31.199,
-   "lon": 29.895,
-   "place": "Alexandria",
-   "country": "Egypt",
-   "country_code": "EG",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": -36.987,
-   "lon": 147.507,
-   "place": "Graveyard",
-   "country": "Australia",
-   "country_code": "AU",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 51.718,
-   "lon": 8.753,
-   "place": "Paderborn",
-   "country": "Germany",
-   "country_code": "DE",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 40.178,
-   "lon": 44.513,
-   "place": "Yerevan",
-   "country": "Armenia",
-   "country_code": "AM",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 51.779,
-   "lon": -4.805,
-   "place": "Neverland",
-   "country": "United Kingdom",
-   "country_code": "GB",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 39.294,
-   "lon": 35.232,
-   "place": "Turkey",
-   "country": "Turkey",
-   "country_code": "TR",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 33.686,
-   "lon": -117.826,
-   "place": "Irvine",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 52.198,
-   "lon": 0.139,
-   "place": "Cambridge",
-   "country": "United Kingdom",
-   "country_code": "GB",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 54.57,
-   "lon": 18.393,
-   "place": "Rumia",
-   "country": "Poland",
-   "country_code": "PL",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 54.983,
-   "lon": 73.375,
-   "place": "Omsk",
-   "country": "Russia",
-   "country_code": "RU",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 41.381,
-   "lon": -74.313,
-   "place": "East Coast",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 54.783,
-   "lon": 9.433,
-   "place": "Flensburg",
-   "country": "Germany",
-   "country_code": "DE",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 54.523,
-   "lon": 18.604,
-   "place": "Gdynia",
-   "country": "Poland",
-   "country_code": "PL",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": -37.788,
-   "lon": 175.282,
-   "place": "Hamilton City",
-   "country": "New Zealand",
-   "country_code": "NZ",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 17.361,
-   "lon": 78.474,
-   "place": "Hyderabad",
-   "country": "India",
-   "country_code": "IN",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 29.872,
-   "lon": 121.55,
-   "place": "Ningbo",
-   "country": "China",
-   "country_code": "CN",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 34.685,
-   "lon": 33.033,
-   "place": "Limassol",
-   "country": "Cyprus",
-   "country_code": "CY",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 55.861,
-   "lon": -4.25,
-   "place": "Glasgow",
-   "country": "United Kingdom",
-   "country_code": "GB",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 45.943,
-   "lon": 4.819,
-   "place": "Reyrieux",
-   "country": "France",
-   "country_code": "FR",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 33.742,
-   "lon": -84.597,
-   "place": "Atlanta, GA",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 35.673,
-   "lon": -79.039,
-   "place": "North Carolina",
+   "lat": 34.054,
+   "lon": -118.243,
+   "place": "Los Angeles",
    "country": "United States",
    "country_code": "US",
    "stargazers": 1,
@@ -2945,21 +3015,61 @@
    "contributors": 0
   },
   {
-   "lat": -22.978,
-   "lon": -49.868,
-   "place": "Ourinhos",
-   "country": "Brazil",
-   "country_code": "BR",
+   "lat": 48.88,
+   "lon": 2.327,
+   "place": "Li\u00e8ge",
+   "country": "France",
+   "country_code": "FR",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": 42.482,
-   "lon": -83.083,
-   "place": "Warren",
-   "country": "United States",
-   "country_code": "US",
+   "lat": 52.216,
+   "lon": 19.134,
+   "place": "Poland",
+   "country": "Poland",
+   "country_code": "PL",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 38.995,
+   "lon": 21.988,
+   "place": "Greece",
+   "country": "Greece",
+   "country_code": "GR",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 56.841,
+   "lon": 24.754,
+   "place": "Latvia",
+   "country": "Latvia",
+   "country_code": "LV",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 27.696,
+   "lon": 68.859,
+   "place": "Sukkur",
+   "country": "Pakistan",
+   "country_code": "PK",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 36.638,
+   "lon": 127.696,
+   "place": "South Korea",
+   "country": "South Korea",
+   "country_code": "KR",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
@@ -2975,211 +3085,11 @@
    "contributors": 0
   },
   {
-   "lat": 13.08,
-   "lon": 80.281,
-   "place": "Chennai",
-   "country": "India",
-   "country_code": "IN",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 22.573,
-   "lon": 88.364,
-   "place": "Kolkata",
-   "country": "India",
-   "country_code": "IN",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 54.687,
-   "lon": 25.283,
-   "place": "Vilnius",
-   "country": "Lithuania",
-   "country_code": "LT",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 51.681,
-   "lon": 7.819,
-   "place": "Hamm",
-   "country": "Germany",
-   "country_code": "DE",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 25.774,
-   "lon": -80.194,
-   "place": "Miami",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 59.92,
-   "lon": 30.462,
-   "place": "SPb",
-   "country": "Russia",
-   "country_code": "RU",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 51.688,
-   "lon": 6.143,
-   "place": "eXcited",
-   "country": "Germany",
-   "country_code": "DE",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 49.489,
-   "lon": 8.467,
-   "place": "Mannheim",
-   "country": "Germany",
-   "country_code": "DE",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 30.674,
-   "lon": -96.37,
-   "place": "Bryan",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 20.254,
-   "lon": -9.24,
-   "place": "Mauritania",
-   "country": "Mauritania",
-   "country_code": "MR",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 50.082,
-   "lon": 8.242,
-   "place": "Wiesbaden",
-   "country": "Germany",
-   "country_code": "DE",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 30.66,
-   "lon": 104.063,
-   "place": "Chengdu",
-   "country": "China",
-   "country_code": "CN",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 52.667,
-   "lon": 1.0,
-   "place": "Norfolk",
-   "country": "United Kingdom",
-   "country_code": "GB",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 51.997,
-   "lon": 4.56,
-   "place": "South Holland",
+   "lat": 51.407,
+   "lon": 5.545,
+   "place": "Erebor",
    "country": "Netherlands",
    "country_code": "NL",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 51.514,
-   "lon": 7.465,
-   "place": "Dortmund",
-   "country": "Germany",
-   "country_code": "DE",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 53.43,
-   "lon": 14.593,
-   "place": "Szczecin",
-   "country": "Poland",
-   "country_code": "PL",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": -34.718,
-   "lon": -58.3,
-   "place": "Bernal",
-   "country": "Argentina",
-   "country_code": "AR",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 44.815,
-   "lon": 20.446,
-   "place": "Belgrade",
-   "country": "Serbia",
-   "country_code": "RS",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 59.961,
-   "lon": 30.159,
-   "place": "Saint Petersburg",
-   "country": "Russia",
-   "country_code": "RU",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 41.838,
-   "lon": -72.466,
-   "place": "Vernon",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 47.071,
-   "lon": 15.438,
-   "place": "Graz",
-   "country": "Austria",
-   "country_code": "AT",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
@@ -3195,11 +3105,101 @@
    "contributors": 0
   },
   {
-   "lat": 61.669,
-   "lon": 50.835,
-   "place": "Syktyvkar",
+   "lat": 32.648,
+   "lon": 54.564,
+   "place": "Iran",
+   "country": "Iran",
+   "country_code": "IR",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 42.678,
+   "lon": -74.485,
+   "place": "Village of Cobleskill",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 23.751,
+   "lon": 89.64,
+   "place": "Barbakpur",
+   "country": "Bangladesh",
+   "country_code": "BD",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 31.199,
+   "lon": 29.895,
+   "place": "Alexandria",
+   "country": "Egypt",
+   "country_code": "EG",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": -34.718,
+   "lon": -58.3,
+   "place": "Bernal",
+   "country": "Argentina",
+   "country_code": "AR",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 59.92,
+   "lon": 30.462,
+   "place": "SPb",
    "country": "Russia",
    "country_code": "RU",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 20.254,
+   "lon": -9.24,
+   "place": "Mauritania",
+   "country": "Mauritania",
+   "country_code": "MR",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 52.091,
+   "lon": 5.122,
+   "place": "Utrecht",
+   "country": "Netherlands",
+   "country_code": "NL",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 49.744,
+   "lon": 15.338,
+   "place": "Czechia",
+   "country": "Czechia",
+   "country_code": "CZ",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 4.016,
+   "lon": 9.148,
+   "place": "Glocal Gaz",
+   "country": "Cameroon",
+   "country_code": "CM",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
@@ -3215,23 +3215,53 @@
    "contributors": 0
   },
   {
-   "lat": 42.776,
-   "lon": 19.202,
-   "place": "Montenegro",
-   "country": "Montenegro",
-   "country_code": "ME",
+   "lat": 51.997,
+   "lon": 4.56,
+   "place": "South Holland",
+   "country": "Netherlands",
+   "country_code": "NL",
    "stargazers": 1,
    "forkers": 0,
    "contributors": 0
   },
   {
-   "lat": -30.082,
-   "lon": -51.026,
-   "place": "Viam\u00e3o",
+   "lat": -22.978,
+   "lon": -49.868,
+   "place": "Ourinhos",
    "country": "Brazil",
    "country_code": "BR",
-   "stargazers": 0,
-   "forkers": 1,
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 39.921,
+   "lon": 32.854,
+   "place": "Ankara",
+   "country": "Turkey",
+   "country_code": "TR",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 35.473,
+   "lon": -97.517,
+   "place": "Oklahoma City",
+   "country": "United States",
+   "country_code": "US",
+   "stargazers": 1,
+   "forkers": 0,
+   "contributors": 0
+  },
+  {
+   "lat": 48.449,
+   "lon": 10.221,
+   "place": "Leipheim",
+   "country": "Germany",
+   "country_code": "DE",
+   "stargazers": 1,
+   "forkers": 0,
    "contributors": 0
   },
   {
@@ -3245,114 +3275,84 @@
    "contributors": 0
   },
   {
-   "lat": 52.216,
-   "lon": 19.134,
-   "place": "Poland",
-   "country": "Poland",
-   "country_code": "PL",
-   "stargazers": 1,
-   "forkers": 0,
+   "lat": 34.982,
+   "lon": 33.145,
+   "place": "Cyprus",
+   "country": "Cyprus",
+   "country_code": "CY",
+   "stargazers": 0,
+   "forkers": 1,
    "contributors": 0
   },
   {
-   "lat": 44.95,
-   "lon": -93.093,
-   "place": "Saint Paul",
+   "lat": 34.181,
+   "lon": -118.307,
+   "place": "Burbank",
    "country": "United States",
    "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
+   "stargazers": 0,
+   "forkers": 1,
    "contributors": 0
   },
   {
-   "lat": 51.358,
-   "lon": -0.299,
-   "place": "Chessington",
+   "lat": 42.698,
+   "lon": 23.322,
+   "place": "Sofia",
+   "country": "Bulgaria",
+   "country_code": "BG",
+   "stargazers": 0,
+   "forkers": 1,
+   "contributors": 0
+  },
+  {
+   "lat": -30.082,
+   "lon": -51.026,
+   "place": "Viam\u00e3o",
+   "country": "Brazil",
+   "country_code": "BR",
+   "stargazers": 0,
+   "forkers": 1,
+   "contributors": 0
+  },
+  {
+   "lat": 53.8,
+   "lon": -1.745,
+   "place": "Bradford",
    "country": "United Kingdom",
    "country_code": "GB",
-   "stargazers": 1,
-   "forkers": 0,
+   "stargazers": 0,
+   "forkers": 1,
    "contributors": 0
   },
   {
-   "lat": 40.587,
-   "lon": -105.077,
-   "place": "Fort Collins",
+   "lat": 33.754,
+   "lon": -84.39,
+   "place": "Atlanta",
    "country": "United States",
    "country_code": "US",
-   "stargazers": 1,
+   "stargazers": 0,
    "forkers": 0,
-   "contributors": 0
+   "contributors": 1
   },
   {
-   "lat": 30.438,
-   "lon": -84.281,
-   "place": "Tallahassee",
+   "lat": 43.157,
+   "lon": -77.615,
+   "place": "Rochester",
    "country": "United States",
    "country_code": "US",
-   "stargazers": 1,
+   "stargazers": 0,
    "forkers": 0,
-   "contributors": 0
+   "contributors": 1
   },
   {
-   "lat": 30.579,
-   "lon": 114.292,
-   "place": "Wuhan",
-   "country": "China",
-   "country_code": "CN",
-   "stargazers": 1,
+   "lat": 45.421,
+   "lon": -75.69,
+   "place": "Ottawa",
+   "country": "Canada",
+   "country_code": "CA",
+   "stargazers": 0,
    "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 37.123,
-   "lon": -78.493,
-   "place": "Virginia",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 51.407,
-   "lon": 5.545,
-   "place": "Erebor",
-   "country": "Netherlands",
-   "country_code": "NL",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 4.653,
-   "lon": -74.084,
-   "place": "Bogota",
-   "country": "Colombia",
-   "country_code": "CO",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 40.739,
-   "lon": -73.975,
-   "place": "New York",
-   "country": "United States",
-   "country_code": "US",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
-  },
-  {
-   "lat": 27.696,
-   "lon": 68.859,
-   "place": "Sukkur",
-   "country": "Pakistan",
-   "country_code": "PK",
-   "stargazers": 1,
-   "forkers": 0,
-   "contributors": 0
+   "contributors": 1
   }
  ]
 }
