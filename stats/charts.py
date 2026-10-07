@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import csv
 import datetime as dt
+import json
 from pathlib import Path
 
 import matplotlib
@@ -357,6 +358,50 @@ def chart_overview(p: Project) -> None:
     plt.close(fig)
 
 
+COUNTRY_NAMES = {
+    "US": "United States", "DE": "Germany", "GB": "United Kingdom", "FR": "France", "NL": "Netherlands", "CN": "China",
+    "IN": "India", "CA": "Canada", "AU": "Australia", "JP": "Japan", "KR": "South Korea", "BR": "Brazil", "RU": "Russia",
+    "CH": "Switzerland", "SE": "Sweden", "AT": "Austria", "PL": "Poland", "ES": "Spain", "IT": "Italy", "FI": "Finland",
+    "NO": "Norway", "DK": "Denmark", "BE": "Belgium", "IE": "Ireland", "SG": "Singapore", "HK": "Hong Kong", "TW": "Taiwan",
+    "CZ": "Czechia", "PT": "Portugal", "TR": "Türkiye", "UA": "Ukraine", "IL": "Israel", "MX": "Mexico", "AR": "Argentina",
+    "ID": "Indonesia", "VN": "Vietnam", "TH": "Thailand", "MY": "Malaysia", "PH": "Philippines", "NZ": "New Zealand",
+    "ZA": "South Africa", "AE": "United Arab Emirates", "SA": "Saudi Arabia", "RO": "Romania", "HU": "Hungary", "GR": "Greece",
+    "BG": "Bulgaria", "LT": "Lithuania", "LV": "Latvia", "EE": "Estonia", "SK": "Slovakia", "SI": "Slovenia", "HR": "Croatia",
+    "RS": "Serbia", "PK": "Pakistan", "BD": "Bangladesh", "NG": "Nigeria", "KE": "Kenya", "EG": "Egypt", "CL": "Chile",
+    "CO": "Colombia", "PE": "Peru", "KZ": "Kazakhstan", "LU": "Luxembourg", "IR": "Iran", "IQ": "Iraq", "LK": "Sri Lanka", "BY": "Belarus", "MD": "Moldova", "GE": "Georgia", "AM": "Armenia", "AZ": "Azerbaijan", "UZ": "Uzbekistan", "MA": "Morocco", "TN": "Tunisia", "DZ": "Algeria", "GH": "Ghana", "ET": "Ethiopia", "VE": "Venezuela", "EC": "Ecuador", "UY": "Uruguay", "CR": "Costa Rica", "PA": "Panama", "DO": "Dominican Republic", "PR": "Puerto Rico", "IS": "Iceland", "MT": "Malta", "CY": "Cyprus", "MK": "North Macedonia", "BA": "Bosnia and Herzegovina", "AL": "Albania", "QA": "Qatar", "KW": "Kuwait", "OM": "Oman", "BH": "Bahrain", "JO": "Jordan", "LB": "Lebanon", "NP": "Nepal", "MM": "Myanmar", "KH": "Cambodia", "MO": "Macao", "MN": "Mongolia", "T1": "Tor network",
+}
+
+
+def chart_countries(p: Project) -> None:
+    path = p.data_dir / "web_countries.json"
+    if not path.exists():
+        return
+    data = json.loads(path.read_text())
+    rows = data["countries"][:15]
+    if not rows:
+        return
+    fig, ax = plt.subplots(figsize=(9, 0.32 * len(rows) + 1.8))
+    names = [COUNTRY_NAMES.get(r["code"], r["code"]) for r in rows][::-1]
+    vals = [r["requests"] for r in rows][::-1]
+    ax.barh(names, vals, color=S1, height=0.62, linewidth=0)
+    ax.grid(False, axis="y")
+    ax.grid(True, axis="x")
+    ax.set_axisbelow(True)
+    for i, v in enumerate(vals):
+        ax.annotate(f"{_fmt(v)}  ({100 * v / max(1, data['total']):.0f}%)", (v, i), xytext=(6, 0),
+                    textcoords="offset points", va="center", fontsize=10, color=INK)
+    ax.set_xlim(0, max(vals) * 1.28)
+    ax.xaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda v, _: _fmt(v)))
+    ax.set_title("Where artifactkeeper.com traffic comes from", loc="left", fontsize=14, fontweight="bold", pad=22, color=INK)
+    ax.text(0, 1.02, f"{data['total']:,} requests from {len(data['countries'])} countries   ·   last {data['days']} days   ·   Cloudflare",
+            transform=ax.transAxes, fontsize=10.5, color=INK_2, va="bottom")
+    fig.tight_layout()
+    out = p.charts_dir / "countries"
+    fig.savefig(out.with_suffix(".png"), dpi=160)
+    fig.savefig(out.with_suffix(".svg"), metadata={"Date": None})
+    plt.close(fig)
+
+
 def render_project(p: Project) -> dict:
     p.charts_dir.mkdir(parents=True, exist_ok=True)
     summary: dict = {}
@@ -367,5 +412,6 @@ def render_project(p: Project) -> dict:
     summary["docker_pulls_total"] = chart_docker_pulls(p)
     summary["traffic"] = chart_traffic(p)
     chart_release_downloads(p)
+    chart_countries(p)
     chart_overview(p)
     return summary

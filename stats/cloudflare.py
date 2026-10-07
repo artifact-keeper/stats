@@ -25,9 +25,12 @@ QUERY = """
 query($zone: String!, $start: Date!, $end: Date!, $host: String!) {
   viewer {
     zones(filter: {zoneTag: $zone}) {
-      httpRequests1dGroups(limit: 10000, filter: {date_geq: $start, date_leq: $end}) {
-        dimensions { date }
-        sum { countryMap { clientCountryName requests } requests uniques { uniques } }
+      zoneAll: httpRequestsAdaptiveGroups(
+        limit: 10000,
+        filter: {date_geq: $start, date_leq: $end, requestSource: "eyeball"}
+      ) {
+        count
+        dimensions { date clientCountryName }
       }
       byHost: httpRequestsAdaptiveGroups(
         limit: 10000,
@@ -99,11 +102,35 @@ def collect_cloudflare(p: Project, hosts: list[str], days: int = 7) -> dict[str,
         # Whole-zone daily totals (site traffic) as a plain snapshot too.
         zpath = p.data_dir / "cf_zone_daily.csv"
         zdata = _read(zpath)
-        for g in z["httpRequests1dGroups"]:
-            d = g["dimensions"]["date"]
+        for (d, c) in list(zdata):
+            if start.isoformat() <= d < end.isoformat():
+                zdata.pop((d, c))
+        for row in z["zoneAll"]:
+            d, c = row["dimensions"]["date"], row["dimensions"]["clientCountryName"] or "??"
             if d >= end.isoformat():
                 continue
-            for cm in g["sum"]["countryMap"]:
-                zdata[(d, cm["clientCountryName"])] = int(cm["requests"])
+            zdata[(d, c)] = zdata.get((d, c), 0) + int(row["count"])
         _write(zpath, zdata)
+        write_web_countries(p, zdata)
     return totals
+
+
+def write_web_countries(p: Project, zdata: dict[tuple[str, str], int], days: int = 28) -> None:
+    """Aggregate the last `days` complete days of zone requests by country for charts and the globe."""
+    today = dt.date.today().isoformat()
+    cutoff = (dt.date.today() - dt.timedelta(days=days)).isoformat()
+    by_country: dict[str, int] = {}
+    dates = set()
+    for (d, c), n in zdata.items():
+        if cutoff < d < today and c:
+            by_country[c] = by_country.get(c, 0) + n
+            dates.add(d)
+    out = {
+        "source": "Cloudflare zone analytics, client requests by country (excludes Worker subrequests)",
+        "days": len(dates),
+        "start": min(dates) if dates else None,
+        "end": max(dates) if dates else None,
+        "total": sum(by_country.values()),
+        "countries": [{"code": c, "requests": n} for c, n in sorted(by_country.items(), key=lambda kv: -kv[1])],
+    }
+    (p.data_dir / "web_countries.json").write_text(json.dumps(out, indent=1) + "\n")

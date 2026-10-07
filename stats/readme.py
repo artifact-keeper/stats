@@ -126,6 +126,8 @@ Repository: [{p.github}](https://github.com/{p.github})
 
 ![Growth overview]({c}/overview.png)
 
+![Where traffic comes from]({c}/countries.png)
+
 **Where is the community?** A spinning globe of stargazers, forkers and contributors by self-reported
 GitHub location: [artifact-keeper.github.io/stats/site](https://artifact-keeper.github.io/stats/site/?project={p.name}).
 Country totals are in [`data/{p.name}/countries.csv`](data/{p.name}/countries.csv).

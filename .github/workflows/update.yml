@@ -40,6 +40,22 @@ jobs:
             head -c 200 /tmp/body; echo
           done
 
+      - name: Debug Cloudflare access
+        if: ${{ inputs.debug_token }}
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ZONE: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+        run: |
+          [ -n "$CF_TOKEN" ] && echo "CLOUDFLARE_API_TOKEN is set" || echo "CLOUDFLARE_API_TOKEN is EMPTY"
+          [ -n "$CF_ZONE" ] && echo "CLOUDFLARE_ZONE_ID is set" || echo "CLOUDFLARE_ZONE_ID is EMPTY"
+          echo "== token verify"
+          curl -s -H "Authorization: Bearer $CF_TOKEN" https://api.cloudflare.com/client/v4/user/tokens/verify | head -c 300; echo
+          echo "== zone visible?"
+          curl -s -H "Authorization: Bearer $CF_TOKEN" "https://api.cloudflare.com/client/v4/zones/$CF_ZONE" | head -c 200; echo
+          echo "== graphql"
+          curl -s -X POST -H "Authorization: Bearer $CF_TOKEN" -H "Content-Type: application/json" https://api.cloudflare.com/client/v4/graphql \
+            --data "{\"query\":\"{ viewer { zones(filter:{zoneTag:\\\"$CF_ZONE\\\"}) { httpRequests1dGroups(limit:2, filter:{date_geq:\\\"$(date -u -d '-3 days' +%F)\\\"}) { dimensions { date } sum { requests } } } } }\"}" | head -c 600; echo
+
       - name: Collect, chart, write README
         env:
           # STATS_TOKEN: a fine-grained PAT with Administration:read (for traffic)
