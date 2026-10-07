@@ -39,11 +39,12 @@ class GitHub:
                 with urllib.request.urlopen(req, timeout=60) as resp:
                     return json.loads(resp.read() or b"null"), resp.headers
             except urllib.error.HTTPError as e:
+                body = e.read().decode(errors="ignore")
                 # 202 = stats being computed; 403/429 = rate limit. Back off and retry.
-                if e.code in (202, 429) or (e.code == 403 and "rate limit" in (e.read().decode(errors="ignore")).lower()):
+                if e.code in (202, 429) or (e.code == 403 and "rate limit" in body.lower()):
                     time.sleep(2 ** attempt)
                     continue
-                raise
+                raise RuntimeError(f"GitHub API {e.code} for {url}: {body[:300]}") from None
         raise RuntimeError(f"GitHub API gave up on {url}")
 
     def get(self, path: str, **params: Any) -> Any:
