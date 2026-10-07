@@ -20,8 +20,8 @@ Repository: [artifact-keeper/artifact-keeper](https://github.com/artifact-keeper
 | GitHub stars | 1,113 |  |
 | Forks | 152 |  |
 | Contributors | 73 |  |
-| Docker Hub pulls (all images) | 316,309 |  |
-| Docker Hub pulls (`backend`) | 116,035 |  |
+| Docker Hub pulls (all images) | 316,323 |  |
+| Docker Hub pulls (`backend`) | 116,043 |  |
 | Binary release downloads | 2,867 |  |
 | Stable releases shipped | 45 |  |
 | Merged pull requests | 2,128 |  |
