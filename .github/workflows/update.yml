@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "17 6 * * *"   # daily, 06:17 UTC
   workflow_dispatch:
+    inputs:
+      debug_token:
+        description: "Print what the STATS_TOKEN can access (no secrets are echoed)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -21,6 +26,19 @@ jobs:
       - uses: astral-sh/setup-uv@v6
         with:
           python-version: "3.12"
+
+      - name: Debug token access
+        if: ${{ inputs.debug_token }}
+        env:
+          TOKEN: ${{ secrets.STATS_TOKEN }}
+        run: |
+          [ -n "$TOKEN" ] && echo "STATS_TOKEN is set" || echo "STATS_TOKEN is EMPTY"
+          for path in user repos/artifact-keeper/artifact-keeper repos/artifact-keeper/artifact-keeper/stargazers?per_page=1 repos/artifact-keeper/artifact-keeper/traffic/views repos/artifact-keeper/artifact-keeper/forks?per_page=1; do
+            echo "== $path"
+            curl -s -o /tmp/body -D /tmp/h -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" "https://api.github.com/$path"
+            grep -i -E '^(HTTP|x-accepted-github-permissions|x-oauth-scopes|x-github-request-id)' /tmp/h
+            head -c 200 /tmp/body; echo
+          done
 
       - name: Collect, chart, write README
         env:
