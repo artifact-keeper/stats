@@ -15,6 +15,7 @@ import datetime as dt
 import hashlib
 import json
 import subprocess
+import sys
 import tempfile
 import urllib.request
 from collections import Counter, OrderedDict
@@ -149,24 +150,27 @@ def collect_snapshot(gh: GitHub, p: Project, releases: list[dict], today: str) -
         discussions { totalCount }
       }
     }"""
-    r = gh.graphql(q, owner=owner, name=name)["repository"]
     snap: dict[str, int] = {
-        "stars": r["stargazerCount"],
-        "forks": r["forkCount"],
-        "watchers": r["watchers"]["totalCount"],
-        "open_issues": r["openIssues"]["totalCount"],
-        "closed_issues": r["closedIssues"]["totalCount"],
-        "open_prs": r["openPRs"]["totalCount"],
-        "merged_prs": r["mergedPRs"]["totalCount"],
-        "discussions": r["discussions"]["totalCount"],
         "release_downloads": sum(x["downloads"] for x in releases),
         "releases": sum(1 for x in releases if not x["prerelease"]),
     }
-    try:
-        snap["contributors"] = sum(1 for _ in gh.paginate(f"/repos/{p.github}/contributors", anon="true"))
-    except RuntimeError:
-        # REST refused (Actions token): count distinct commit authors with a GitHub account instead.
-        snap["contributors"] = len(graph.contributors(gh, p.github))
+    r = _step("repo counts", lambda: gh.graphql(q, owner=owner, name=name)["repository"], None)
+    if r:
+        snap.update({
+            "stars": r["stargazerCount"],
+            "forks": r["forkCount"],
+            "watchers": r["watchers"]["totalCount"],
+            "open_issues": r["openIssues"]["totalCount"],
+            "closed_issues": r["closedIssues"]["totalCount"],
+            "open_prs": r["openPRs"]["totalCount"],
+            "merged_prs": r["mergedPRs"]["totalCount"],
+            "discussions": r["discussions"]["totalCount"],
+        })
+    contributors = _step("contributors", lambda: sum(1 for _ in gh.paginate(f"/repos/{p.github}/contributors", anon="true")), None)
+    if contributors is None:
+        contributors = _step("contributors (graphql)", lambda: len(graph.contributors(gh, p.github)), None)
+    if contributors is not None:
+        snap["contributors"] = contributors
 
     for image in p.docker_images:
         pulls = docker_pulls(image)
@@ -202,14 +206,33 @@ def collect_snapshot(gh: GitHub, p: Project, releases: list[dict], today: str) -
     return snap
 
 
+def _step(name: str, fn, default):
+    """Run one collector; on failure keep whatever data already exists and continue."""
+    try:
+        return fn()
+    except Exception as e:  # noqa: BLE001
+        print(f"  warning: {name} skipped: {str(e)[:200]}", file=sys.stderr)
+        return default
+
+
 def collect_project(gh: GitHub, p: Project, git_dir: Path | None = None, today: str | None = None) -> dict[str, int]:
     today = today or dt.date.today().isoformat()
     p.data_dir.mkdir(parents=True, exist_ok=True)
-    collect_stars(gh, p)
-    collect_forks(gh, p)
-    releases = collect_releases(gh, p)
-    collect_commits(p, git_dir)
-    snap = collect_snapshot(gh, p, releases, today)
-    for host, total in collect_cloudflare(p, p.cloudflare_hosts).items():
+    _step("stars", lambda: collect_stars(gh, p), None)
+    _step("forks", lambda: collect_forks(gh, p), None)
+    releases = _step("releases", lambda: collect_releases(gh, p), None)
+    if releases is None:
+        releases = [{"tag": r["tag"], "published_at": r["published_at"], "prerelease": r["prerelease"] == "True",
+                     "downloads": int(r["downloads"])} for r in _read_rows(p.data_dir / "releases.csv")]
+    _step("commits", lambda: collect_commits(p, git_dir), None)
+    snap = _step("snapshot", lambda: collect_snapshot(gh, p, releases, today), {})
+    for host, total in _step("cloudflare", lambda: collect_cloudflare(p, p.cloudflare_hosts), {}).items():
         snap[f"cf_requests:{host}"] = total
     return snap
+
+
+def _read_rows(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    with path.open(newline="") as fh:
+        return list(csv.DictReader(fh))

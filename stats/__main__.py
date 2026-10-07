@@ -35,7 +35,11 @@ def main(argv: list[str] | None = None) -> int:
     if args.command in ("geo", "all"):
         gh = GitHub()
         for p in projects:
-            geo = build_geo(gh, p)
+            try:
+                geo = build_geo(gh, p)
+            except Exception as e:  # noqa: BLE001
+                print(f"[{p.name}] geo skipped: {str(e)[:200]}", file=sys.stderr)
+                continue
             print(f"[{p.name}] geo: {geo['people_located']}/{geo['people_total']} people located, "
                   f"{len(geo['countries'])} countries, top: {geo['countries'][:5]}")
     if args.command in ("charts", "all"):
