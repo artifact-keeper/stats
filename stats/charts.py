@@ -45,6 +45,7 @@ plt.rcParams.update({
     "xtick.major.size": 0,
     "ytick.major.size": 0,
     "legend.frameon": False,
+    "svg.hashsalt": "ak-stats",   # deterministic SVG ids so unchanged charts do not churn in git
 })
 
 
@@ -96,7 +97,7 @@ def _finish(fig, ax, title: str, subtitle: str, out: Path) -> None:
     fig.tight_layout()
     out.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(out.with_suffix(".png"), dpi=160)
-    fig.savefig(out.with_suffix(".svg"))
+    fig.savefig(out.with_suffix(".svg"), metadata={"Date": None})
     plt.close(fig)
 
 
@@ -199,7 +200,7 @@ def chart_docker_pulls(p: Project) -> int | None:
         fig.tight_layout()
         out.parent.mkdir(parents=True, exist_ok=True)
         fig.savefig(out.with_suffix(".png"), dpi=160)
-        fig.savefig(out.with_suffix(".svg"))
+        fig.savefig(out.with_suffix(".svg"), metadata={"Date": None})
         plt.close(fig)
         return total
 
@@ -214,7 +215,7 @@ def chart_docker_pulls(p: Project) -> int | None:
     _date_axis(ax, days_of_history)
     fig.tight_layout()
     fig.savefig(out.with_suffix(".png"), dpi=160)
-    fig.savefig(out.with_suffix(".svg"))
+    fig.savefig(out.with_suffix(".svg"), metadata={"Date": None})
     plt.close(fig)
     return total
 
@@ -256,7 +257,7 @@ def chart_traffic(p: Project) -> dict[str, int] | None:
     fig.tight_layout()
     out = p.charts_dir / "traffic"
     fig.savefig(out.with_suffix(".png"), dpi=160)
-    fig.savefig(out.with_suffix(".svg"))
+    fig.savefig(out.with_suffix(".svg"), metadata={"Date": None})
     plt.close(fig)
     return totals
 
@@ -285,7 +286,7 @@ def chart_release_downloads(p: Project) -> None:
     out = p.charts_dir / "release_downloads"
     out.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(out.with_suffix(".png"), dpi=160)
-    fig.savefig(out.with_suffix(".svg"))
+    fig.savefig(out.with_suffix(".svg"), metadata={"Date": None})
     plt.close(fig)
 
 
@@ -330,7 +331,7 @@ def chart_overview(p: Project) -> None:
     fig.tight_layout(rect=(0, 0, 1, 0.96))
     out = p.charts_dir / "overview"
     fig.savefig(out.with_suffix(".png"), dpi=160)
-    fig.savefig(out.with_suffix(".svg"))
+    fig.savefig(out.with_suffix(".svg"), metadata={"Date": None})
     plt.close(fig)
 
 
