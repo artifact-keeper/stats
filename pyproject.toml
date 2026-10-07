@@ -1,0 +1,16 @@
+[project]
+name = "ak-stats"
+version = "0.1.0"
+description = "Growth and adoption metrics collector and chart generator for Artifact Keeper OSS projects"
+requires-python = ">=3.12"
+dependencies = ["matplotlib>=3.9"]
+
+[project.scripts]
+ak-stats = "stats.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["stats"]

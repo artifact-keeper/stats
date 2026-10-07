@@ -1,0 +1,16 @@
+# Projects tracked by the stats collector. Add a [[projects]] block per OSS
+# product. Everything that can be pulled from public APIs is collected with
+# the default GITHUB_TOKEN; traffic (views/clones) needs a token with push
+# access to the repo and is skipped when unavailable.
+
+[[projects]]
+name = "artifact-keeper"
+github = "artifact-keeper/artifact-keeper"
+docker_images = [
+  "artifactkeeper/backend",
+  "artifactkeeper/web",
+  "artifactkeeper/scanner-adapter",
+  "artifactkeeper/openscap",
+]
+# Image whose pulls best approximate "installs" (every deployment pulls it).
+primary_image = "artifactkeeper/backend"

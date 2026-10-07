@@ -1,0 +1,45 @@
+name: Update stats
+
+on:
+  schedule:
+    - cron: "17 6 * * *"   # daily, 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-stats
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+
+      - name: Collect, chart, write README
+        env:
+          # STATS_TOKEN: a fine-grained PAT with Administration:read (for traffic)
+          # on the tracked repos. Falls back to GITHUB_TOKEN, which collects
+          # everything except views/clones.
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          uv sync --quiet
+          uv run ak-stats all
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data charts badges README.md latest.json
+          if git diff --cached --quiet; then
+            echo "no changes"
+            exit 0
+          fi
+          git commit -m "stats: $(date -u +%Y-%m-%d) snapshot"
+          git push
