@@ -4,7 +4,7 @@ Adoption and community metrics for Artifact Keeper open-source projects, collect
 [a GitHub Actions workflow](.github/workflows/update.yml) and committed back to this repo.
 Charts and numbers below regenerate on every run.
 
-Last updated: **2026-10-07 17:09 UTC**
+Last updated: **2026-10-07 17:11 UTC**
 
 Data lives in [`data/`](data/) as plain CSV so it can be dropped into a spreadsheet or deck.
 Chart images are in [`charts/`](charts/) as PNG and SVG. Machine-readable latest numbers are in
@@ -20,8 +20,8 @@ Repository: [artifact-keeper/artifact-keeper](https://github.com/artifact-keeper
 | GitHub stars | 1,113 |  |
 | Forks | 152 |  |
 | Contributors | 73 |  |
-| Docker Hub pulls (all images) | 315,982 |  |
-| Docker Hub pulls (`backend`) | 115,900 |  |
+| Docker Hub pulls (all images) | 315,988 |  |
+| Docker Hub pulls (`backend`) | 115,906 |  |
 | Binary release downloads | 2,867 |  |
 | Stable releases shipped | 45 |  |
 | Merged pull requests | 2,128 |  |
