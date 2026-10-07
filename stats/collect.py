@@ -188,8 +188,10 @@ def collect_snapshot(gh: GitHub, p: Project, releases: list[dict], today: str) -
     # so partial "today" numbers get corrected tomorrow.
     traffic_ok = False
     for kind in ("views", "clones"):
-        data = gh.try_get(f"/repos/{p.github}/traffic/{kind}")
-        if not data:
+        try:
+            data = gh.get(f"/repos/{p.github}/traffic/{kind}")
+        except RuntimeError as e:
+            print(f"  warning: traffic {kind} skipped: {str(e)[:200]}", file=sys.stderr)
             continue
         traffic_ok = True
         for point in data[kind]:

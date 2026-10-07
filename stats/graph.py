@@ -12,6 +12,30 @@ from dataclasses import dataclass
 from .github import GitHub
 
 
+def _forbidden(e: Exception) -> bool:
+    return "FORBIDDEN" in str(e) or "not accessible" in str(e)
+
+
+def locations(gh: GitHub, logins: list[str]) -> dict[str, str | None]:
+    """login -> profile location via batched GraphQL lookups; empty on refusal."""
+    out: dict[str, str | None] = {}
+    logins = sorted(u for u in set(logins) if "[bot]" not in u)
+    for i in range(0, len(logins), 100):
+        batch = logins[i:i + 100]
+        parts = [f'u{j}: repositoryOwner(login: "{login}") {{ ... on User {{ location }} ... on Organization {{ location }} }}'
+                 for j, login in enumerate(batch)]
+        try:
+            data = gh.graphql("query { " + " ".join(parts) + " }")
+        except RuntimeError as e:
+            if _forbidden(e):
+                return out
+            raise
+        for j, login in enumerate(batch):
+            node = data.get(f"u{j}") or {}
+            out[login] = node.get("location")
+    return out
+
+
 @dataclass
 class Person:
     login: str
@@ -37,11 +61,23 @@ def stargazers(gh: GitHub, repo: str) -> list[tuple[str, Person]]:
     out: list[tuple[str, Person]] = []
     after = None
     while True:
-        conn = gh.graphql(q, owner=owner, name=name, after=after)["repository"]["stargazers"]
+        try:
+            conn = gh.graphql(q, owner=owner, name=name, after=after)["repository"]["stargazers"]
+        except RuntimeError as e:
+            if _forbidden(e) and not out:
+                return _stargazers_rest(gh, repo)
+            raise
         out += [(e["starredAt"], Person(e["node"]["login"], e["node"].get("location"))) for e in conn["edges"]]
         if not conn["pageInfo"]["hasNextPage"]:
             return out
         after = conn["pageInfo"]["endCursor"]
+
+
+def _stargazers_rest(gh: GitHub, repo: str) -> list[tuple[str, Person]]:
+    rows = [(s["starred_at"], s["user"]["login"]) for s in
+            gh.paginate(f"/repos/{repo}/stargazers", accept="application/vnd.github.star+json") if s.get("user")]
+    locs = locations(gh, [login for _, login in rows])
+    return [(ts, Person(login, locs.get(login))) for ts, login in rows]
 
 
 def forks(gh: GitHub, repo: str) -> list[tuple[str, Person]]:
@@ -58,7 +94,14 @@ def forks(gh: GitHub, repo: str) -> list[tuple[str, Person]]:
     out: list[tuple[str, Person]] = []
     after = None
     while True:
-        conn = gh.graphql(q, owner=owner, name=name, after=after)["repository"]["forks"]
+        try:
+            conn = gh.graphql(q, owner=owner, name=name, after=after)["repository"]["forks"]
+        except RuntimeError as e:
+            if _forbidden(e) and not out:
+                rows = [(f["created_at"], f["owner"]["login"]) for f in gh.paginate(f"/repos/{repo}/forks", sort="oldest")]
+                locs = locations(gh, [login for _, login in rows])
+                return [(ts, Person(login, locs.get(login))) for ts, login in rows]
+            raise
         out += [(n["createdAt"], Person(n["owner"]["login"], n["owner"].get("location"))) for n in conn["nodes"]]
         if not conn["pageInfo"]["hasNextPage"]:
             return out
