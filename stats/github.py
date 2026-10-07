@@ -27,10 +27,16 @@ def _token() -> str | None:
 class GitHub:
     def __init__(self, token: str | None = None):
         self.token = token or _token()
+        # The Actions GITHUB_TOKEN is an installation token that cannot read some
+        # endpoints on repos outside the workflow's own repo (403 "Resource not
+        # accessible by integration"). Public REST data is readable anonymously at
+        # 60 requests/hour, which covers a run, so fall back to that when it happens.
+        self.rest_anonymous = False
 
     def _request(self, url: str, accept: str = "application/vnd.github+json", method: str = "GET", body: dict | None = None):
         headers = {"Accept": accept, "User-Agent": "ak-stats", "X-GitHub-Api-Version": "2022-11-28"}
-        if self.token:
+        is_graphql = url.endswith("/graphql")
+        if self.token and (is_graphql or not self.rest_anonymous):
             headers["Authorization"] = f"Bearer {self.token}"
         data = json.dumps(body).encode() if body is not None else None
         req = urllib.request.Request(url, headers=headers, method=method, data=data)
@@ -44,6 +50,9 @@ class GitHub:
                 if e.code in (202, 429) or (e.code == 403 and "rate limit" in body.lower()):
                     time.sleep(2 ** attempt)
                     continue
+                if e.code == 403 and "not accessible by integration" in body and not is_graphql and not self.rest_anonymous:
+                    self.rest_anonymous = True
+                    return self._request(url, accept=accept, method=method, body=body)
                 raise RuntimeError(f"GitHub API {e.code} for {url}: {body[:300]}") from None
         raise RuntimeError(f"GitHub API gave up on {url}")
 
