@@ -110,9 +110,29 @@ def _line(ax, xs, ys, color, label=None, direct_label=True):
                     va="center", fontsize=11, fontweight="bold", color=INK)
 
 
+def _extend_with_snapshots(p: Project, metric: str, xs: list[dt.date], ys: list[int]) -> tuple[list[dt.date], list[int]]:
+    """Event history can only be rebuilt with a token GitHub lets list stargazers.
+    When it stops being refreshed, continue the series from the daily count snapshots."""
+    sx, sy = _snapshot_series(p, metric)
+    if not sx:
+        return xs, ys
+    # Find the last day the event history actually changed (the backfill extends flat to today).
+    last_change = next((xs[i] for i in range(len(xs) - 1, 0, -1) if ys[i] != ys[i - 1]), xs[-1]) if xs else None
+    extra = [(x, y) for x, y in zip(sx, sy) if last_change is None or x > last_change]
+    if not extra:
+        return xs, ys
+    xs = [x for x in xs if last_change is None or x <= last_change]
+    ys = ys[:len(xs)]
+    for x, y in extra:
+        xs.append(x)
+        ys.append(max(y, ys[-1] if ys else y))
+    return xs, ys
+
+
 def chart_cumulative(p: Project, file: str, column: str, title: str, out_name: str, color: str = S1) -> int | None:
     stamps = [r[column] for r in _read(p.data_dir / file)]
     xs, ys = _cumulative(stamps)
+    xs, ys = _extend_with_snapshots(p, {"stars.csv": "stars", "forks.csv": "forks"}.get(file, ""), xs, ys)
     if not xs:
         return None
     fig, ax = plt.subplots(figsize=(9, 4.2))
@@ -120,7 +140,9 @@ def chart_cumulative(p: Project, file: str, column: str, title: str, out_name: s
     ax.set_ylim(0, max(ys) * 1.12)
     ax.set_xlim(xs[0], xs[-1] + dt.timedelta(days=max(7, len(xs) // 12)))
     ax.yaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda v, _: _fmt(v)))
-    last30 = ys[-1] - (ys[-31] if len(ys) > 31 else 0)
+    cutoff = xs[-1] - dt.timedelta(days=30)
+    base = next((y for x, y in zip(xs, ys) if x >= cutoff), ys[0])
+    last30 = ys[-1] - base
     _finish(fig, ax, title, f"{ys[-1]:,} total   ·   +{last30:,} in the last 30 days", p.charts_dir / out_name)
     return ys[-1]
 
@@ -292,8 +314,8 @@ def chart_release_downloads(p: Project) -> None:
 
 def chart_overview(p: Project) -> None:
     """2x2 small multiples for slide decks: stars, forks, contributors, weekly commits."""
-    sx, sy = _cumulative([r["starred_at"] for r in _read(p.data_dir / "stars.csv")])
-    fx, fy = _cumulative([r["created_at"] for r in _read(p.data_dir / "forks.csv")])
+    sx, sy = _extend_with_snapshots(p, "stars", *_cumulative([r["starred_at"] for r in _read(p.data_dir / "stars.csv")]))
+    fx, fy = _extend_with_snapshots(p, "forks", *_cumulative([r["created_at"] for r in _read(p.data_dir / "forks.csv")]))
     rows = _read(p.data_dir / "commits_weekly.csv")
     wx = [dt.date.fromisoformat(r["week"]) for r in rows]
     cy = [int(r["total_contributors"]) for r in rows]
