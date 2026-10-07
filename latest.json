@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07 17:12 UTC",
+  "updated": "2026-10-07 17:40 UTC",
   "projects": {
     "artifact-keeper": {
       "clones": 682,
@@ -9,11 +9,11 @@
       "closed_issues": 1946,
       "contributors": 73,
       "discussions": 61,
-      "docker_pulls:artifactkeeper/backend": 115906,
-      "docker_pulls:artifactkeeper/openscap": 118205,
-      "docker_pulls:artifactkeeper/scanner-adapter": 51006,
+      "docker_pulls:artifactkeeper/backend": 116035,
+      "docker_pulls:artifactkeeper/openscap": 118309,
+      "docker_pulls:artifactkeeper/scanner-adapter": 51094,
       "docker_pulls:artifactkeeper/web": 30871,
-      "docker_pulls_total": 315988,
+      "docker_pulls_total": 316309,
       "forks": 152,
       "merged_prs": 2128,
       "open_issues": 196,
