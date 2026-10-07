@@ -4,7 +4,7 @@ Adoption and community metrics for Artifact Keeper open-source projects, collect
 [a GitHub Actions workflow](.github/workflows/update.yml) and committed back to this repo.
 Charts and numbers below regenerate on every run.
 
-Last updated: **2026-10-07 18:40 UTC**
+Last updated: **2026-10-07 19:08 UTC**
 
 Data lives in [`data/`](data/) as plain CSV so it can be dropped into a spreadsheet or deck.
 Chart images are in [`charts/`](charts/) as PNG and SVG. Machine-readable latest numbers are in
@@ -38,21 +38,24 @@ Repository: [artifact-keeper/artifact-keeper](https://github.com/artifact-keeper
 
 ![Where traffic comes from](https://raw.githubusercontent.com/artifact-keeper/stats/main/charts/artifact-keeper/countries.png)
 
-**Where is the community?** A spinning globe of stargazers, forkers and contributors by self-reported
-GitHub location: [artifact-keeper.github.io/stats/site](https://artifact-keeper.github.io/stats/site/?project=artifact-keeper).
+**Where is the community?** Heat map of stargazers, forkers and contributors by self-reported GitHub
+location, with countries shaded by website traffic. Click for the interactive globe.
+
+[![Where is Artifact Keeper today? Spinning globe heat map](https://raw.githubusercontent.com/artifact-keeper/stats/main/charts/artifact-keeper/globe.gif)](https://artifact-keeper.github.io/stats/site/?project=artifact-keeper)
+
 Country totals are in [`data/artifact-keeper/countries.csv`](data/artifact-keeper/countries.csv).
 
 <details>
 <summary>Individual charts</summary>
-
-![GitHub stars](https://raw.githubusercontent.com/artifact-keeper/stats/main/charts/artifact-keeper/stars.png)
-![Forks](https://raw.githubusercontent.com/artifact-keeper/stats/main/charts/artifact-keeper/forks.png)
-![Contributors](https://raw.githubusercontent.com/artifact-keeper/stats/main/charts/artifact-keeper/contributors.png)
-![Commits per week](https://raw.githubusercontent.com/artifact-keeper/stats/main/charts/artifact-keeper/commits_weekly.png)
-![Docker Hub pulls](https://raw.githubusercontent.com/artifact-keeper/stats/main/charts/artifact-keeper/docker_pulls.png)
-![GitHub traffic](https://raw.githubusercontent.com/artifact-keeper/stats/main/charts/artifact-keeper/traffic.png)
-![Release downloads](https://raw.githubusercontent.com/artifact-keeper/stats/main/charts/artifact-keeper/release_downloads.png)
-
+<p>
+<img src="https://raw.githubusercontent.com/artifact-keeper/stats/main/charts/artifact-keeper/stars.png" alt="GitHub stars" width="100%"><br>
+<img src="https://raw.githubusercontent.com/artifact-keeper/stats/main/charts/artifact-keeper/forks.png" alt="Forks" width="100%"><br>
+<img src="https://raw.githubusercontent.com/artifact-keeper/stats/main/charts/artifact-keeper/contributors.png" alt="Contributors" width="100%"><br>
+<img src="https://raw.githubusercontent.com/artifact-keeper/stats/main/charts/artifact-keeper/commits_weekly.png" alt="Commits per week" width="100%"><br>
+<img src="https://raw.githubusercontent.com/artifact-keeper/stats/main/charts/artifact-keeper/docker_pulls.png" alt="Docker Hub pulls" width="100%"><br>
+<img src="https://raw.githubusercontent.com/artifact-keeper/stats/main/charts/artifact-keeper/traffic.png" alt="GitHub traffic" width="100%"><br>
+<img src="https://raw.githubusercontent.com/artifact-keeper/stats/main/charts/artifact-keeper/release_downloads.png" alt="Release downloads" width="100%">
+</p>
 </details>
 
 ## Adding a project

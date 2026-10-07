@@ -5,6 +5,9 @@ description = "Growth and adoption metrics collector and chart generator for Art
 requires-python = ">=3.12"
 dependencies = ["matplotlib>=3.9"]
 
+[project.optional-dependencies]
+globe = ["playwright>=1.47", "pillow>=10"]
+
 [project.scripts]
 ak-stats = "stats.__main__:main"
 

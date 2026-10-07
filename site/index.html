@@ -38,6 +38,7 @@
   .foot a { color: var(--ink-2); }
   .legend { display: flex; gap: 14px; margin-top: 12px; font-size: 12px; color: var(--ink-2); }
   .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; }
+  body.no-ui .hud, body.no-ui .countries, body.no-ui .foot { display: none; }
   @media (max-width: 760px) {
     .hud { max-width: none; right: 16px; }
     .countries { display: none; }
@@ -56,7 +57,7 @@
     <div class="stat"><b id="s-countries">–</b><span>countries</span></div>
     <div class="stat"><b id="s-places">–</b><span>cities</span></div>
   </div>
-  <div class="legend"><span><i style="background:var(--accent)"></i>stargazers &amp; forks</span><span><i style="background:var(--accent-2)"></i>contributors</span><span id="legend-web" hidden><i style="background:rgba(57,135,229,.55);border-radius:2px"></i>website visitors by country</span></div>
+  <div class="legend"><span><i style="background:var(--accent)"></i>stargazers &amp; forks</span><span><i style="background:var(--accent-2)"></i>contributors</span><span id="legend-web" hidden><i style="background:rgba(57,135,229,.55);border-radius:2px"></i>website visitors by country</span><span id="legend-heat" hidden><i style="background:linear-gradient(90deg,#30123b,#28bceb,#a4fc3c,#fb7e21,#7a0403)"></i>community density</span></div>
 </section>
 
 <aside class="countries">
@@ -71,6 +72,10 @@
 (async () => {
   const params = new URLSearchParams(location.search);
   const project = params.get('project') || 'artifact-keeper';
+  if (params.get('ui') === '0') document.body.classList.add('no-ui');
+  const showBars = params.get('bars') !== '0';
+  const showHeat = params.get('heat') === '1';
+  const starfield = params.get('bg') !== '0';
   const base = params.get('data') || `../data/${project}`;
   const [geo, latest, web, countriesGeo] = await Promise.all([
     fetch(`${base}/geo.json`).then(r => r.json()),
@@ -83,7 +88,7 @@
     const community = p.stargazers + p.forkers;
     const total = community + p.contributors;
     return { lat: p.lat, lng: p.lon, place: p.place, country: p.country, community, contributors: p.contributors, total,
-             color: p.contributors ? '#eb6834' : '#3987e5' };
+             countryLevel: !!p.country_level, color: p.contributors ? '#eb6834' : '#3987e5' };
   });
   const max = Math.max(1, ...points.map(p => p.total));
 
@@ -91,10 +96,11 @@
   const globe = Globe()(el)
     .globeImageUrl('https://unpkg.com/three-globe@2.31.0/example/img/earth-night.jpg')
     .bumpImageUrl('https://unpkg.com/three-globe@2.31.0/example/img/earth-topology.png')
-    .backgroundImageUrl('https://unpkg.com/three-globe@2.31.0/example/img/night-sky.png')
+    .backgroundImageUrl(starfield ? 'https://unpkg.com/three-globe@2.31.0/example/img/night-sky.png' : null)
+    .backgroundColor('#07090f')
     .atmosphereColor('#3987e5')
     .atmosphereAltitude(0.18)
-    .pointsData(points)
+    .pointsData(showBars ? points : [])
     .pointLat('lat').pointLng('lng')
     .pointAltitude(d => 0.02 + 0.35 * Math.sqrt(d.total / max))
     .pointRadius(d => 0.25 + 0.6 * Math.sqrt(d.total / max))
@@ -103,6 +109,16 @@
     .pointLabel(d => `<div style="font:13px/1.4 Inter,system-ui,sans-serif;color:#f3f4f6;background:rgba(13,17,27,.92);padding:8px 10px;border-radius:8px;border:1px solid rgba(255,255,255,.1)">
         <b>${d.place}</b>${d.country ? `, ${d.country}` : ''}<br>
         <span style="color:#aab0bd">${d.community} stargazers &amp; forks${d.contributors ? ` · ${d.contributors} contributor${d.contributors > 1 ? 's' : ''}` : ''}</span></div>`)
+    .heatmapsData(showHeat ? [points] : [])
+    .heatmapPoints(d => d)
+    .heatmapPointLat('lat').heatmapPointLng('lng')
+    // Country-only profiles sit on a centroid, not a city: keep them faint so they don't fake a hotspot.
+    .heatmapPointWeight(d => d.countryLevel ? 0.5 : Math.log1p(d.total))
+    .heatmapBandwidth(2.4)
+    .heatmapColorSaturation(1.0)
+    .heatmapBaseAltitude(0.012)
+    .heatmapTopAltitude(0.05)
+    .heatmapsTransitionDuration(0)
     .ringsData(points.filter(p => p.contributors))
     .ringLat('lat').ringLng('lng')
     .ringColor(() => t => `rgba(235,104,52,${1 - t})`)
@@ -125,10 +141,13 @@
     document.getElementById('legend-web').hidden = false;
   }
 
-  globe.controls().autoRotate = true;
+  if (showHeat) document.getElementById('legend-heat').hidden = false;
+  globe.controls().autoRotate = params.get('spin') !== '0';
   globe.controls().autoRotateSpeed = 0.55;
   globe.controls().enableZoom = true;
-  globe.pointOfView({ lat: 30, lng: -20, altitude: 2.2 });
+  globe.pointOfView({ lat: 25, lng: Number(params.get('lng') ?? -20), altitude: Number(params.get("alt") ?? 2.1) });
+  window.__globe = globe;
+  window.__globeReady = true;
   el.addEventListener('pointerdown', () => { globe.controls().autoRotate = false; });
   el.addEventListener('pointerup', () => { setTimeout(() => { globe.controls().autoRotate = true; }, 6000); });
   new ResizeObserver(() => globe.width(el.clientWidth).height(el.clientHeight)).observe(el);

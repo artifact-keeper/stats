@@ -157,6 +157,8 @@ def build_geo(gh: GitHub, p: Project) -> dict:
         key = (g["lat"], g["lon"])
         entry = places.setdefault(key, {"lat": float(g["lat"]), "lon": float(g["lon"]), "place": g["place"] or loc,
                                         "country": g["country"], "country_code": g["country_code"],
+                                        # True when the profile only named a country, so the point is a centroid, not a city
+                                        "country_level": bool(g["country"]) and (g["place"] or "").strip().lower() == g["country"].strip().lower(),
                                         "stargazers": 0, "forkers": 0, "contributors": 0})
         if login in star_set:
             entry["stargazers"] += 1

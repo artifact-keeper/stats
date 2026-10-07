@@ -128,21 +128,24 @@ Repository: [{p.github}](https://github.com/{p.github})
 
 ![Where traffic comes from]({c}/countries.png)
 
-**Where is the community?** A spinning globe of stargazers, forkers and contributors by self-reported
-GitHub location: [artifact-keeper.github.io/stats/site](https://artifact-keeper.github.io/stats/site/?project={p.name}).
+**Where is the community?** Heat map of stargazers, forkers and contributors by self-reported GitHub
+location, with countries shaded by website traffic. Click for the interactive globe.
+
+[![Where is Artifact Keeper today? Spinning globe heat map]({c}/globe.gif)](https://artifact-keeper.github.io/stats/site/?project={p.name})
+
 Country totals are in [`data/{p.name}/countries.csv`](data/{p.name}/countries.csv).
 
 <details>
 <summary>Individual charts</summary>
-
-![GitHub stars]({c}/stars.png)
-![Forks]({c}/forks.png)
-![Contributors]({c}/contributors.png)
-![Commits per week]({c}/commits_weekly.png)
-![Docker Hub pulls]({c}/docker_pulls.png)
-![GitHub traffic]({c}/traffic.png)
-![Release downloads]({c}/release_downloads.png)
-
+<p>
+<img src="{c}/stars.png" alt="GitHub stars" width="100%"><br>
+<img src="{c}/forks.png" alt="Forks" width="100%"><br>
+<img src="{c}/contributors.png" alt="Contributors" width="100%"><br>
+<img src="{c}/commits_weekly.png" alt="Commits per week" width="100%"><br>
+<img src="{c}/docker_pulls.png" alt="Docker Hub pulls" width="100%"><br>
+<img src="{c}/traffic.png" alt="GitHub traffic" width="100%"><br>
+<img src="{c}/release_downloads.png" alt="Release downloads" width="100%">
+</p>
 </details>
 """
 

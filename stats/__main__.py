@@ -14,7 +14,7 @@ from .readme import write_readme
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="ak-stats", description="Collect growth metrics and render charts")
-    ap.add_argument("command", choices=["collect", "geo", "charts", "readme", "all"])
+    ap.add_argument("command", choices=["collect", "geo", "charts", "globe", "readme", "all"])
     ap.add_argument("--project", help="only this project (name from config.toml)")
     ap.add_argument("--git-dir", type=Path, help="existing .git dir to read commit history from instead of cloning")
     ap.add_argument("--date", help="snapshot date override (YYYY-MM-DD)")
@@ -46,6 +46,13 @@ def main(argv: list[str] | None = None) -> int:
         for p in projects:
             summary = render_project(p)
             print(f"[{p.name}] charts: {summary}")
+    if args.command in ("globe", "all"):
+        from .globe_gif import render_gif
+        for p in projects:
+            try:
+                print(f"[{p.name}] globe gif: {render_gif(p)}")
+            except Exception as e:  # noqa: BLE001
+                print(f"[{p.name}] globe gif skipped: {str(e)[:200]}", file=sys.stderr)
     if args.command in ("readme", "all"):
         write_readme(load_projects())
         print("README.md, latest.json and badges written")
