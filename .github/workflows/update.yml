@@ -20,6 +20,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
@@ -57,6 +58,7 @@ jobs:
             --data "{\"query\":\"{ viewer { zones(filter:{zoneTag:\\\"$CF_ZONE\\\"}) { httpRequests1dGroups(limit:2, filter:{date_geq:\\\"$(date -u -d '-3 days' +%F)\\\"}) { dimensions { date } sum { requests } } } } }\"}" | head -c 600; echo
 
       - name: Collect, chart, write README
+        timeout-minutes: 20
         env:
           # STATS_TOKEN: a fine-grained PAT with Administration:read (for traffic)
           # on the tracked repos. Falls back to GITHUB_TOKEN, which collects
@@ -68,8 +70,19 @@ jobs:
           CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
         run: |
           uv sync --quiet --extra globe
-          uv run playwright install --with-deps chromium >/dev/null
           uv run ak-stats all
+
+      # The spinning globe GIF needs headless Chromium with software WebGL. It is
+      # best-effort: if it fails or stalls, the previous GIF stays and the
+      # numbers above still get committed.
+      - name: Render globe GIF
+        timeout-minutes: 15
+        continue-on-error: true
+        env:
+          DEBIAN_FRONTEND: noninteractive
+        run: |
+          timeout 300 uv run playwright install --with-deps chromium >/dev/null
+          timeout 600 uv run ak-stats globe
 
       - name: Commit and push
         run: |

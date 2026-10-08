@@ -46,7 +46,7 @@ def main(argv: list[str] | None = None) -> int:
         for p in projects:
             summary = render_project(p)
             print(f"[{p.name}] charts: {summary}")
-    if args.command in ("globe", "all"):
+    if args.command == "globe":
         from .globe_gif import render_gif
         for p in projects:
             try:
