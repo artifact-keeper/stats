@@ -4,7 +4,7 @@ Adoption and community metrics for Artifact Keeper open-source projects, collect
 [a GitHub Actions workflow](.github/workflows/update.yml) and committed back to this repo.
 Charts and numbers below regenerate on every run.
 
-Last updated: **2026-10-23 11:47 UTC**
+Last updated: **2026-10-24 11:12 UTC**
 
 Data lives in [`data/`](data/) as plain CSV so it can be dropped into a spreadsheet or deck.
 Chart images are in [`charts/`](charts/) as PNG and SVG. Machine-readable latest numbers are in
@@ -17,18 +17,18 @@ Repository: [artifact-keeper/artifact-keeper](https://github.com/artifact-keeper
 
 | Metric | Now | 30-day change |
 |---|---:|---:|
-| GitHub stars | 1,181 |  |
-| Forks | 161 |  |
-| Contributors | 81 |  |
-| Docker Hub pulls (all images) | 352,904 |  |
-| Docker Hub pulls (`backend`) | 126,858 |  |
-| Binary release downloads | 4,125 |  |
-| Stable releases shipped | 51 |  |
-| Merged pull requests | 2,297 |  |
-| Closed issues | 2,179 |  |
+| GitHub stars | 1,182 |  |
+| Forks | 163 |  |
+| Contributors | 82 |  |
+| Docker Hub pulls (all images) | 357,825 |  |
+| Docker Hub pulls (`backend`) | 128,768 |  |
+| Binary release downloads | 4,210 |  |
+| Stable releases shipped | 52 |  |
+| Merged pull requests | 2,339 |  |
+| Closed issues | 2,217 |  |
 | Discussions | 66 |  |
-| Unique visitors, last 28 days | 4,088 |  |
-| Unique git cloners, last 28 days | 3,022 |  |
+| Unique visitors, last 28 days | 4,070 |  |
+| Unique git cloners, last 28 days | 3,002 |  |
 
 30-day change needs 30 days of snapshots; it fills in as history accumulates.
 
