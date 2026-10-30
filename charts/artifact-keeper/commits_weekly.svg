@@ -367,8 +367,8 @@ z
    <g id="patch_44">
     <path d="M 598.388592 276.817773 
 L 608.625633 276.817773 
-L 608.625633 218.023918 
-L 598.388592 218.023918 
+L 608.625633 193.526479 
+L 598.388592 193.526479 
 z
 " clip-path="url(#p44b388d538)" style="fill: #2a78d6"/>
    </g>
@@ -1278,7 +1278,7 @@ L 635.846853 276.817773
 " style="fill: none; stroke: #e8e7e3; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="text_20">
-    <!-- 2,606 commits total   ·   310 in the last 4 full weeks -->
+    <!-- 2,621 commits total   ·   310 in the last 4 full weeks -->
     <g style="fill: #52514e" transform="translate(36.98 37.348237) scale(0.105 -0.105)">
      <defs>
       <path id="DejaVuSans-f" d="M 750 794 
@@ -1477,8 +1477,8 @@ z
      <use xlink:href="#DejaVuSans-15"/>
      <use xlink:href="#DejaVuSans-f" transform="translate(63.625 0)"/>
      <use xlink:href="#DejaVuSans-19" transform="translate(95.40625 0)"/>
-     <use xlink:href="#DejaVuSans-13" transform="translate(159.03125 0)"/>
-     <use xlink:href="#DejaVuSans-19" transform="translate(222.65625 0)"/>
+     <use xlink:href="#DejaVuSans-15" transform="translate(159.03125 0)"/>
+     <use xlink:href="#DejaVuSans-14" transform="translate(222.65625 0)"/>
      <use xlink:href="#DejaVuSans-3" transform="translate(286.28125 0)"/>
      <use xlink:href="#DejaVuSans-46" transform="translate(318.0625 0)"/>
      <use xlink:href="#DejaVuSans-52" transform="translate(373.046875 0)"/>
