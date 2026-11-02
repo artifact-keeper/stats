@@ -161,6 +161,13 @@ def write_readme(projects: list[Project]) -> None:
         sections.append(project_section(p, snap))
     body = f"""# OSS growth stats
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/artifact-keeper/.github/main/brand/logo-horizontal-dark.png">
+    <img alt="Artifact Keeper" src="https://raw.githubusercontent.com/artifact-keeper/.github/main/brand/logo-horizontal-light.png" width="360">
+  </picture>
+</p>
+
 Adoption and community metrics for Artifact Keeper open-source projects, collected daily by
 [a GitHub Actions workflow](.github/workflows/update.yml) and committed back to this repo.
 Charts and numbers below regenerate on every run.
