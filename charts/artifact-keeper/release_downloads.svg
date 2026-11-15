@@ -771,24 +771,24 @@ z
    </g>
    <g id="patch_13">
     <path d="M 65.06 179.041458 
-L 275.648937 179.041458 
-L 275.648937 163.454589 
+L 278.2488 179.041458 
+L 278.2488 163.454589 
 L 65.06 163.454589 
 z
 " clip-path="url(#peaf4e59567)" style="fill: #2a78d6"/>
    </g>
    <g id="patch_14">
     <path d="M 65.06 153.901346 
-L 306.847298 153.901346 
-L 306.847298 138.314477 
+L 309.447161 153.901346 
+L 309.447161 138.314477 
 L 65.06 138.314477 
 z
 " clip-path="url(#peaf4e59567)" style="fill: #2a78d6"/>
    </g>
    <g id="patch_15">
     <path d="M 65.06 128.761234 
-L 340.645522 128.761234 
-L 340.645522 113.174365 
+L 343.245386 128.761234 
+L 343.245386 113.174365 
 L 65.06 113.174365 
 z
 " clip-path="url(#peaf4e59567)" style="fill: #2a78d6"/>
@@ -803,8 +803,8 @@ z
    </g>
    <g id="patch_17">
     <path d="M 65.06 78.48101 
-L 291.248117 78.48101 
-L 291.248117 62.894141 
+L 293.847981 78.48101 
+L 293.847981 62.894141 
 L 65.06 62.894141 
 z
 " clip-path="url(#peaf4e59567)" style="fill: #2a78d6"/>
@@ -889,25 +889,25 @@ L 636.12 448.82
     </g>
    </g>
    <g id="text_35">
-    <!-- 81 -->
-    <g style="fill: #0b0b0b" transform="translate(281.648937 173.84568) scale(0.1 -0.1)">
+    <!-- 82 -->
+    <g style="fill: #0b0b0b" transform="translate(284.2488 173.84568) scale(0.1 -0.1)">
      <use xlink:href="#DejaVuSans-1b"/>
-     <use xlink:href="#DejaVuSans-14" transform="translate(63.625 0)"/>
+     <use xlink:href="#DejaVuSans-15" transform="translate(63.625 0)"/>
     </g>
    </g>
    <g id="text_36">
-    <!-- 93 -->
-    <g style="fill: #0b0b0b" transform="translate(312.847298 148.705568) scale(0.1 -0.1)">
+    <!-- 94 -->
+    <g style="fill: #0b0b0b" transform="translate(315.447161 148.705568) scale(0.1 -0.1)">
      <use xlink:href="#DejaVuSans-1c"/>
-     <use xlink:href="#DejaVuSans-16" transform="translate(63.625 0)"/>
+     <use xlink:href="#DejaVuSans-17" transform="translate(63.625 0)"/>
     </g>
    </g>
    <g id="text_37">
-    <!-- 106 -->
-    <g style="fill: #0b0b0b" transform="translate(346.645522 123.565456) scale(0.1 -0.1)">
+    <!-- 107 -->
+    <g style="fill: #0b0b0b" transform="translate(349.245386 123.565456) scale(0.1 -0.1)">
      <use xlink:href="#DejaVuSans-14"/>
      <use xlink:href="#DejaVuSans-13" transform="translate(63.625 0)"/>
-     <use xlink:href="#DejaVuSans-19" transform="translate(127.25 0)"/>
+     <use xlink:href="#DejaVuSans-1a" transform="translate(127.25 0)"/>
     </g>
    </g>
    <g id="text_38">
@@ -918,14 +918,14 @@ L 636.12 448.82
     </g>
    </g>
    <g id="text_39">
-    <!-- 87 -->
-    <g style="fill: #0b0b0b" transform="translate(297.248117 73.285232) scale(0.1 -0.1)">
+    <!-- 88 -->
+    <g style="fill: #0b0b0b" transform="translate(299.847981 73.285232) scale(0.1 -0.1)">
      <use xlink:href="#DejaVuSans-1b"/>
-     <use xlink:href="#DejaVuSans-1a" transform="translate(63.625 0)"/>
+     <use xlink:href="#DejaVuSans-1b" transform="translate(63.625 0)"/>
     </g>
    </g>
    <g id="text_40">
-    <!-- 6,324 downloads across all releases   ·   last 15 stable releases shown -->
+    <!-- 6,338 downloads across all releases   ·   last 15 stable releases shown -->
     <g style="fill: #52514e" transform="translate(65.06 33.908192) scale(0.105 -0.105)">
      <defs>
       <path id="DejaVuSans-f" d="M 750 794 
@@ -1231,8 +1231,8 @@ z
      <use xlink:href="#DejaVuSans-19"/>
      <use xlink:href="#DejaVuSans-f" transform="translate(63.625 0)"/>
      <use xlink:href="#DejaVuSans-16" transform="translate(95.40625 0)"/>
-     <use xlink:href="#DejaVuSans-15" transform="translate(159.03125 0)"/>
-     <use xlink:href="#DejaVuSans-17" transform="translate(222.65625 0)"/>
+     <use xlink:href="#DejaVuSans-16" transform="translate(159.03125 0)"/>
+     <use xlink:href="#DejaVuSans-1b" transform="translate(222.65625 0)"/>
      <use xlink:href="#DejaVuSans-3" transform="translate(286.28125 0)"/>
      <use xlink:href="#DejaVuSans-47" transform="translate(318.0625 0)"/>
      <use xlink:href="#DejaVuSans-52" transform="translate(381.546875 0)"/>
