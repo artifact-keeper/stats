@@ -1,26 +1,26 @@
 {
-  "updated": "2026-11-15 14:02 UTC",
+  "updated": "2026-11-16 15:58 UTC",
   "projects": {
     "artifact-keeper": {
       "clones": 3312,
       "clones_unique": 186,
       "views": 301,
       "views_unique": 131,
-      "closed_issues": 2666,
+      "closed_issues": 2668,
       "contributors": 87,
       "discussions": 72,
-      "docker_pulls:artifactkeeper/backend": 190382,
-      "docker_pulls:artifactkeeper/openscap": 161120,
-      "docker_pulls:artifactkeeper/scanner-adapter": 91070,
-      "docker_pulls:artifactkeeper/web": 45814,
-      "docker_pulls_total": 488386,
+      "docker_pulls:artifactkeeper/backend": 192456,
+      "docker_pulls:artifactkeeper/openscap": 162231,
+      "docker_pulls:artifactkeeper/scanner-adapter": 92013,
+      "docker_pulls:artifactkeeper/web": 46160,
+      "docker_pulls_total": 492860,
       "forks": 183,
-      "merged_prs": 2793,
-      "open_issues": 197,
-      "open_prs": 60,
-      "release_downloads": 6338,
+      "merged_prs": 2804,
+      "open_issues": 212,
+      "open_prs": 75,
+      "release_downloads": 6855,
       "releases": 59,
-      "stars": 1291,
+      "stars": 1293,
       "watchers": 7
     }
   }
